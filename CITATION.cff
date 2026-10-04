@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "Please cite the manuscript and identify the repository commit used."
+type: software
+title: "From information tasks to exclusivity and Bell bounds"
+authors:
+  - family-names: Mausberg
+    given-names: Samuel
+date-released: "2026-10-04"
+repository-code: "https://github.com/SamMausberg/information-tasks-bell-bounds"
+url: "https://github.com/SamMausberg/information-tasks-bell-bounds"
+license: MIT
+license-url: "https://github.com/SamMausberg/information-tasks-bell-bounds/blob/main/LICENSE"
+preferred-citation:
+  type: unpublished
+  title: "From information tasks to exclusivity and Bell bounds"
+  authors:
+    - family-names: Mausberg
+      given-names: Samuel
+  year: 2026
+  license: CC-BY-4.0
+  url: "https://github.com/SamMausberg/information-tasks-bell-bounds/blob/main/information_tasks_bell_bounds.pdf"
+  notes: "Research manuscript. Identify the repository commit used."

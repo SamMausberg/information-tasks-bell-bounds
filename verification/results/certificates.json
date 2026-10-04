@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "check_count": 1276,
+  "groups": {
+    "HS_capacity": 45,
+    "HS_witness": 188,
+    "T2_witnesses": 8,
+    "capacity_witness": 14,
+    "coverage": 4,
+    "five_clique": 19,
+    "frequency": 132,
+    "identity_game": 5,
+    "instrument": 2,
+    "noisy_box": 54,
+    "polynomial": 4,
+    "quantum_parity": 50,
+    "residual_bound": 6,
+    "running_example": 9,
+    "sixteen_cliques": 736
+  },
+  "arithmetic": "integers, Fraction rationals, and exact SymPy algebra; no floating-point tests",
+  "scope": "Finite certificates only; universal task and composition proofs are in the manuscript.",
+  "cliques": 16,
+  "ordered_event_pairs": 128,
+  "fine_pair_exclusivity_checks": 448,
+  "parity_exclusivity_checks": 128,
+  "constants": {
+    "noisy_chsh": "81/25",
+    "squared_excess": "1561/625",
+    "five_event_sum": "32761/32000",
+    "frequency_gap": "761/320000 - h",
+    "parity_neutrality_gap": "1561/180000",
+    "residual_necessity": "epsilon0 + epsilon1 + 72*kappa >= 1561/2500",
+    "residual_CHSH": "B^2 <= 8 + 4*(epsilon0+epsilon1) + 288*kappa",
+    "copy_risk": "((L+1)/(4L))^2",
+    "asymptotic_risk": "1/16",
+    "published_HS_gap": "1/42",
+    "identity_game_error_threshold": "1/(4n+1)"
+  },
+  "python": "3.12.3",
+  "sympy": "1.14.0"
+}

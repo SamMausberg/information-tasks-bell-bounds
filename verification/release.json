@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-04",
+  "command": "bash build.sh",
+  "exit_code": 0,
+  "python": "3.12.3",
+  "pdflatex": "1.40.25 (TeX Live 2023/Debian)",
+  "checks": "1,276 exact finite checks passed.",
+  "latex_final_diagnostics": [],
+  "final_pdf": "information_tasks_bell_bounds.pdf",
+  "final_pdf_sha256": "e6a0622b55e86edb239b4e4c61491a2df3e266971dc59ec9a75e1b0a3489130b",
+  "supplied_final_pdf_preserved": true,
+  "final_pdf_matches_bundled_source": false,
+  "lean_sources": 0,
+  "scope": "Bundled-source compilation and supplied finite checks; not a formal verification of the final manuscript."
+}

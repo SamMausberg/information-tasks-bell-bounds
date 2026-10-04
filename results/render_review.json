@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "renderer": "PyMuPDF / MuPDF",
+  "scale": 1.4,
+  "pages_rendered": 18,
+  "pages_visually_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "checks": [
+    "text and equations remain within columns",
+    "no clipped diagrams or captions",
+    "all four vector figures inspected",
+    "first page, new corollary, and communication witness inspected",
+    "no missing-character squares observed"
+  ],
+  "pdf_sha256": "8b16828c88b4d2f4e6aefa638c4e87556b6df68ce36926bd825cd054e1833d1a",
+  "review_scope": "Visual layout inspection, not independent mathematical peer review.",
+  "render_unchanged_after_final_rebuild": true
+}

@@ -1,0 +1,12 @@
+{
+  "build": "passed",
+  "engine": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "class": "quantumarticle v6.1 (unmodified class file included)",
+  "abstract_word_count": 140,
+  "pages": 18,
+  "finite_exact_checks": 1276,
+  "errors_or_unresolved_references": false,
+  "overfull_boxes": false,
+  "underfull_hbox_diagnostics": 0,
+  "pdf": "paper.pdf"
+}

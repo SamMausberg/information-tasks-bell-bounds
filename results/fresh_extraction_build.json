@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "method": "Archive extracted to a clean directory; bash build.sh completed there.",
+  "pages": 18,
+  "finite_exact_checks": 1276,
+  "abstract_word_count": 140,
+  "unresolved_references_or_citations": false,
+  "overfull_boxes": false,
+  "underfull_hbox_diagnostics": 0,
+  "source_files_match": true,
+  "extracted_pdf_text_matches": true,
+  "certificate_results_match": true,
+  "final_pdf_renders_match_inspected_pages": true,
+  "scope": "Reproducibility and layout checks, not independent peer review or machine-checked proofs of universal theorems."
+}

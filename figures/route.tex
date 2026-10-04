@@ -1,0 +1,11 @@
+\begin{tikzpicture}[font=\small,node distance=4mm,
+ box/.style={draw,rounded corners=1.5pt,align=center,text width=0.85\columnwidth,inner sep=4pt},
+ >={Latex[length=1.7mm]},every path/.style={line width=.55pt}]
+\node[box] (h) {H: homogeneous frequency tasks\\C: common calibration domains};
+\node[box,below=of h] (e) {IV, V, VIII: task completion\\Exclusivity with error $m\kappa$};
+\node[box,below=of e] (p) {Keep the residual parity records\\$B^2\leq8+4(\eps_0+\eps_1)+288\kappa$};
+\node[box,below=of p] (c) {T2 + capacity bound + setting interchange\\No residual attribute: $|B|\leq2\sqrt2$};
+\draw[->] (h)--(e);
+\draw[->] (e)--(p);
+\draw[->] (p)--(c);
+\end{tikzpicture}

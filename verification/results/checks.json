@@ -1,0 +1,5106 @@
+[
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 0, 0, 0, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 0, 0, 0, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 0, 0, 0, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 0, 0, 0, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 0, 0, 0, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 0, 0, 0, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 0, 0, 0, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 0, 0, 0, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 0, 0, 0, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 0, 0, 0, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 0, 0, 0, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 0, 0, 0, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 0, 0, 0, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 0, 0, 0, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 0, 0, 0, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 0, 0, 0, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "eight distinct fine events (0, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "four winning products (0, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 0, 0, 2)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 0, 0, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 0, 0, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 0, 0, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 0, 0, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 0, 0, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 0, 1, 2)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 0, 1, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 0, 1, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 0, 1, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 0, 1, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 0, 1, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 0, 2, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 0, 2, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 0, 2, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 0, 2, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 0, 2, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 0, 3, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 0, 3, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 0, 3, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 0, 3, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 0, 4, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 0, 4, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 0, 4, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 0, 5, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 0, 5, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 0, 6, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 0, 0, 1, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 0, 0, 1, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 0, 0, 1, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 0, 0, 1, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 0, 0, 1, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 0, 0, 1, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 0, 0, 1, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 0, 0, 1, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 0, 0, 1, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 0, 0, 1, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 0, 0, 1, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 0, 0, 1, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 0, 0, 1, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 0, 0, 1, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 0, 0, 1, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 0, 0, 1, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "eight distinct fine events (0, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "four winning products (0, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 1, 0, 2)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 1, 0, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 1, 0, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 1, 0, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 1, 0, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 1, 0, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 1, 1, 2)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 1, 1, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 1, 1, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 1, 1, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 1, 1, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 1, 1, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 1, 2, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 1, 2, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 1, 2, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 1, 2, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 1, 2, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 1, 3, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 1, 3, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 1, 3, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 1, 3, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 1, 4, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 1, 4, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 1, 4, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 1, 5, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 1, 5, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 0, 1, 6, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 0, 1, 0, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 0, 1, 0, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 0, 1, 0, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 0, 1, 0, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 0, 1, 0, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 0, 1, 0, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 0, 1, 0, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 0, 1, 0, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 0, 1, 0, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 0, 1, 0, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 0, 1, 0, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 0, 1, 0, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 0, 1, 0, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 0, 1, 0, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 0, 1, 0, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 0, 1, 0, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "eight distinct fine events (0, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "four winning products (0, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 0, 0, 2)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 0, 0, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 0, 0, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 0, 0, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 0, 0, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 0, 0, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 0, 1, 2)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 0, 1, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 0, 1, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 0, 1, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 0, 1, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 0, 1, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 0, 2, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 0, 2, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 0, 2, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 0, 2, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 0, 2, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 0, 3, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 0, 3, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 0, 3, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 0, 3, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 0, 4, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 0, 4, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 0, 4, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 0, 5, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 0, 5, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 0, 6, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 0, 1, 1, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 0, 1, 1, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 0, 1, 1, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 0, 1, 1, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 0, 1, 1, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 0, 1, 1, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 0, 1, 1, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 0, 1, 1, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 0, 1, 1, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 0, 1, 1, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 0, 1, 1, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 0, 1, 1, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 0, 1, 1, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 0, 1, 1, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 0, 1, 1, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 0, 1, 1, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "eight distinct fine events (0, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "four winning products (0, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 1, 0, 2)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 1, 0, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 1, 0, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 1, 0, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 1, 0, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 1, 0, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 1, 1, 2)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 1, 1, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 1, 1, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 1, 1, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 1, 1, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 1, 1, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 1, 2, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 1, 2, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 1, 2, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 1, 2, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 1, 2, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 1, 3, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 1, 3, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 1, 3, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 1, 3, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 1, 4, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 1, 4, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 1, 4, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 1, 5, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 1, 5, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 0, 1, 1, 6, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 1, 0, 0, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 1, 0, 0, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 1, 0, 0, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 1, 0, 0, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 1, 0, 0, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 1, 0, 0, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 1, 0, 0, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 1, 0, 0, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 1, 0, 0, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 1, 0, 0, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 1, 0, 0, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 1, 0, 0, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 1, 0, 0, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 1, 0, 0, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 1, 0, 0, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 1, 0, 0, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "eight distinct fine events (0, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "four winning products (0, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 0, 0, 2)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 0, 0, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 0, 0, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 0, 0, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 0, 0, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 0, 0, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 0, 1, 2)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 0, 1, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 0, 1, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 0, 1, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 0, 1, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 0, 1, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 0, 2, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 0, 2, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 0, 2, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 0, 2, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 0, 2, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 0, 3, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 0, 3, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 0, 3, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 0, 3, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 0, 4, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 0, 4, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 0, 4, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 0, 5, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 0, 5, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 0, 6, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 1, 0, 1, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 1, 0, 1, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 1, 0, 1, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 1, 0, 1, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 1, 0, 1, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 1, 0, 1, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 1, 0, 1, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 1, 0, 1, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 1, 0, 1, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 1, 0, 1, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 1, 0, 1, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 1, 0, 1, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 1, 0, 1, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 1, 0, 1, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 1, 0, 1, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 1, 0, 1, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "eight distinct fine events (0, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "four winning products (0, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 1, 0, 2)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 1, 0, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 1, 0, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 1, 0, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 1, 0, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 1, 0, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 1, 1, 2)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 1, 1, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 1, 1, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 1, 1, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 1, 1, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 1, 1, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 1, 2, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 1, 2, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 1, 2, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 1, 2, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 1, 2, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 1, 3, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 1, 3, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 1, 3, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 1, 3, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 1, 4, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 1, 4, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 1, 4, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 1, 5, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 1, 5, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 0, 1, 6, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 1, 1, 0, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 1, 1, 0, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 1, 1, 0, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 1, 1, 0, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 1, 1, 0, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 1, 1, 0, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 1, 1, 0, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 1, 1, 0, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 1, 1, 0, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 1, 1, 0, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 1, 1, 0, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 1, 1, 0, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 1, 1, 0, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 1, 1, 0, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 1, 1, 0, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 1, 1, 0, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "eight distinct fine events (0, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "four winning products (0, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 0, 0, 2)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 0, 0, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 0, 0, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 0, 0, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 0, 0, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 0, 0, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 0, 1, 2)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 0, 1, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 0, 1, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 0, 1, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 0, 1, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 0, 1, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 0, 2, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 0, 2, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 0, 2, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 0, 2, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 0, 2, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 0, 3, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 0, 3, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 0, 3, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 0, 3, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 0, 4, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 0, 4, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 0, 4, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 0, 5, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 0, 5, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 0, 6, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 1, 1, 1, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 1, 1, 1, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 1, 1, 1, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 1, 1, 1, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 1, 1, 1, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 1, 1, 1, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 1, 1, 1, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 1, 1, 1, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 1, 1, 1, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 1, 1, 1, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 1, 1, 1, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 1, 1, 1, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 1, 1, 1, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 1, 1, 1, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (0, 1, 1, 1, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (0, 1, 1, 1, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "eight distinct fine events (0, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "four winning products (0, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 1, 0, 2)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 1, 0, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 1, 0, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 1, 0, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 1, 0, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 1, 0, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 1, 1, 2)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 1, 1, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 1, 1, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 1, 1, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 1, 1, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 1, 1, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 1, 2, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 1, 2, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 1, 2, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 1, 2, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 1, 2, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 1, 3, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 1, 3, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 1, 3, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 1, 3, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 1, 4, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 1, 4, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 1, 4, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 1, 5, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 1, 5, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (0, 1, 1, 1, 6, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 0, 0, 0, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 0, 0, 0, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 0, 0, 0, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 0, 0, 0, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 0, 0, 0, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 0, 0, 0, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 0, 0, 0, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 0, 0, 0, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 0, 0, 0, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 0, 0, 0, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 0, 0, 0, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 0, 0, 0, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 0, 0, 0, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 0, 0, 0, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 0, 0, 0, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 0, 0, 0, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "eight distinct fine events (1, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "four winning products (1, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 0, 0, 2)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 0, 0, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 0, 0, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 0, 0, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 0, 0, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 0, 0, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 0, 1, 2)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 0, 1, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 0, 1, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 0, 1, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 0, 1, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 0, 1, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 0, 2, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 0, 2, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 0, 2, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 0, 2, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 0, 2, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 0, 3, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 0, 3, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 0, 3, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 0, 3, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 0, 4, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 0, 4, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 0, 4, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 0, 5, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 0, 5, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 0, 6, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 0, 0, 1, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 0, 0, 1, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 0, 0, 1, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 0, 0, 1, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 0, 0, 1, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 0, 0, 1, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 0, 0, 1, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 0, 0, 1, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 0, 0, 1, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 0, 0, 1, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 0, 0, 1, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 0, 0, 1, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 0, 0, 1, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 0, 0, 1, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 0, 0, 1, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 0, 0, 1, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "eight distinct fine events (1, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "four winning products (1, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 1, 0, 2)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 1, 0, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 1, 0, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 1, 0, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 1, 0, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 1, 0, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 1, 1, 2)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 1, 1, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 1, 1, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 1, 1, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 1, 1, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 1, 1, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 1, 2, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 1, 2, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 1, 2, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 1, 2, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 1, 2, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 1, 3, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 1, 3, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 1, 3, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 1, 3, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 1, 4, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 1, 4, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 1, 4, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 1, 5, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 1, 5, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 0, 1, 6, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 0, 1, 0, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 0, 1, 0, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 0, 1, 0, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 0, 1, 0, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 0, 1, 0, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 0, 1, 0, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 0, 1, 0, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 0, 1, 0, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 0, 1, 0, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 0, 1, 0, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 0, 1, 0, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 0, 1, 0, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 0, 1, 0, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 0, 1, 0, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 0, 1, 0, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 0, 1, 0, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "eight distinct fine events (1, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "four winning products (1, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 0, 0, 2)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 0, 0, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 0, 0, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 0, 0, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 0, 0, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 0, 0, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 0, 1, 2)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 0, 1, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 0, 1, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 0, 1, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 0, 1, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 0, 1, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 0, 2, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 0, 2, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 0, 2, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 0, 2, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 0, 2, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 0, 3, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 0, 3, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 0, 3, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 0, 3, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 0, 4, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 0, 4, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 0, 4, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 0, 5, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 0, 5, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 0, 6, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 0, 1, 1, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 0, 1, 1, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 0, 1, 1, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 0, 1, 1, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 0, 1, 1, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 0, 1, 1, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 0, 1, 1, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 0, 1, 1, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 0, 1, 1, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 0, 1, 1, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 0, 1, 1, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 0, 1, 1, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 0, 1, 1, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 0, 1, 1, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 0, 1, 1, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 0, 1, 1, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "eight distinct fine events (1, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "four winning products (1, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 1, 0, 2)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 1, 0, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 1, 0, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 1, 0, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 1, 0, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 1, 0, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 1, 1, 2)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 1, 1, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 1, 1, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 1, 1, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 1, 1, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 1, 1, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 1, 2, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 1, 2, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 1, 2, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 1, 2, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 1, 2, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 1, 3, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 1, 3, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 1, 3, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 1, 3, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 1, 4, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 1, 4, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 1, 4, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 1, 5, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 1, 5, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 0, 1, 1, 6, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 1, 0, 0, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 1, 0, 0, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 1, 0, 0, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 1, 0, 0, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 1, 0, 0, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 1, 0, 0, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 1, 0, 0, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 1, 0, 0, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 1, 0, 0, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 1, 0, 0, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 1, 0, 0, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 1, 0, 0, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 1, 0, 0, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 1, 0, 0, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 1, 0, 0, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 1, 0, 0, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "eight distinct fine events (1, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "four winning products (1, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 0, 0, 2)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 0, 0, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 0, 0, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 0, 0, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 0, 0, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 0, 0, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 0, 1, 2)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 0, 1, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 0, 1, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 0, 1, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 0, 1, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 0, 1, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 0, 2, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 0, 2, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 0, 2, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 0, 2, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 0, 2, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 0, 3, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 0, 3, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 0, 3, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 0, 3, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 0, 4, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 0, 4, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 0, 4, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 0, 5, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 0, 5, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 0, 6, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 1, 0, 1, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 1, 0, 1, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 1, 0, 1, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 1, 0, 1, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 1, 0, 1, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 1, 0, 1, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 1, 0, 1, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 1, 0, 1, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 1, 0, 1, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 1, 0, 1, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 1, 0, 1, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 1, 0, 1, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 1, 0, 1, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 1, 0, 1, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 1, 0, 1, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 1, 0, 1, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "eight distinct fine events (1, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "four winning products (1, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 1, 0, 2)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 1, 0, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 1, 0, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 1, 0, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 1, 0, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 1, 0, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 1, 1, 2)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 1, 1, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 1, 1, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 1, 1, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 1, 1, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 1, 1, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 1, 2, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 1, 2, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 1, 2, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 1, 2, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 1, 2, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 1, 3, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 1, 3, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 1, 3, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 1, 3, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 1, 4, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 1, 4, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 1, 4, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 1, 5, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 1, 5, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 0, 1, 6, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 1, 1, 0, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 1, 1, 0, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 1, 1, 0, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 1, 1, 0, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 1, 1, 0, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 1, 1, 0, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 1, 1, 0, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 1, 1, 0, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 1, 1, 0, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 1, 1, 0, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 1, 1, 0, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 1, 1, 0, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 1, 1, 0, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 1, 1, 0, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 1, 1, 0, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 1, 1, 0, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "eight distinct fine events (1, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "four winning products (1, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 0, 0, 2)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 0, 0, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 0, 0, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 0, 0, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 0, 0, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 0, 0, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 0, 1, 2)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 0, 1, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 0, 1, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 0, 1, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 0, 1, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 0, 1, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 0, 2, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 0, 2, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 0, 2, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 0, 2, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 0, 2, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 0, 3, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 0, 3, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 0, 3, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 0, 3, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 0, 4, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 0, 4, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 0, 4, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 0, 5, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 0, 5, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 0, 6, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 1, 1, 1, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 1, 1, 1, 0, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 1, 1, 1, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 1, 1, 1, 0, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 1, 1, 1, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 1, 1, 1, 0, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 1, 1, 1, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 1, 1, 1, 0, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 1, 1, 1, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 1, 1, 1, 1, 0, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 1, 1, 1, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 1, 1, 1, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 1, 1, 1, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 1, 1, 1, 1, 1, 0)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "same win status (1, 1, 1, 1, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "parity contradiction (1, 1, 1, 1, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "eight distinct fine events (1, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "four winning products (1, 1, 1, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 1, 0, 1)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 1, 0, 2)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 1, 0, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 1, 0, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 1, 0, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 1, 0, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 1, 0, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 1, 1, 2)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 1, 1, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 1, 1, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 1, 1, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 1, 1, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 1, 1, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 1, 2, 3)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 1, 2, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 1, 2, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 1, 2, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 1, 2, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 1, 3, 4)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 1, 3, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 1, 3, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 1, 3, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 1, 4, 5)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 1, 4, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 1, 4, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 1, 5, 6)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 1, 5, 7)"
+  },
+  {
+    "group": "sixteen_cliques",
+    "name": "fine exclusivity (1, 1, 1, 1, 6, 7)"
+  },
+  {
+    "group": "coverage",
+    "name": "128 ordered same-status pairs"
+  },
+  {
+    "group": "coverage",
+    "name": "exact event-set coverage"
+  },
+  {
+    "group": "coverage",
+    "name": "every pair occurs exactly once"
+  },
+  {
+    "group": "coverage",
+    "name": "each parity outcome occurs twice"
+  },
+  {
+    "group": "polynomial",
+    "name": "arbitrary-weight sixteen-clique identity"
+  },
+  {
+    "group": "polynomial",
+    "name": "CHSH sum conversion"
+  },
+  {
+    "group": "polynomial",
+    "name": "robust CHSH coefficient"
+  },
+  {
+    "group": "polynomial",
+    "name": "frequency robustness substitution"
+  },
+  {
+    "group": "residual_bound",
+    "name": "full residual polynomial"
+  },
+  {
+    "group": "residual_bound",
+    "name": "zero residual recovers previous bound"
+  },
+  {
+    "group": "residual_bound",
+    "name": "empty parity variables give algebraic bound"
+  },
+  {
+    "group": "residual_bound",
+    "name": "finite window replacement"
+  },
+  {
+    "group": "residual_bound",
+    "name": "81/25 residual necessity"
+  },
+  {
+    "group": "residual_bound",
+    "name": "calibration coefficient after dividing by four"
+  },
+  {
+    "group": "noisy_box",
+    "name": "exact convolution (0, 0, 0, 0)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "positive (0, 0, 0, 0)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "exact convolution (0, 0, 0, 1)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "positive (0, 0, 0, 1)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "exact convolution (0, 0, 1, 0)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "positive (0, 0, 1, 0)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "exact convolution (0, 0, 1, 1)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "positive (0, 0, 1, 1)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "exact convolution (0, 1, 0, 0)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "positive (0, 1, 0, 0)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "exact convolution (0, 1, 0, 1)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "positive (0, 1, 0, 1)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "exact convolution (0, 1, 1, 0)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "positive (0, 1, 1, 0)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "exact convolution (0, 1, 1, 1)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "positive (0, 1, 1, 1)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "exact convolution (1, 0, 0, 0)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "positive (1, 0, 0, 0)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "exact convolution (1, 0, 0, 1)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "positive (1, 0, 0, 1)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "exact convolution (1, 0, 1, 0)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "positive (1, 0, 1, 0)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "exact convolution (1, 0, 1, 1)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "positive (1, 0, 1, 1)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "exact convolution (1, 1, 0, 0)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "positive (1, 1, 0, 0)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "exact convolution (1, 1, 0, 1)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "positive (1, 1, 0, 1)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "exact convolution (1, 1, 1, 0)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "positive (1, 1, 1, 0)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "exact convolution (1, 1, 1, 1)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "positive (1, 1, 1, 1)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "normalization (0, 0)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "Alice marginal (0, 0, 0)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "Alice marginal (1, 0, 0)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "Bob marginal (0, 0, 0)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "Bob marginal (1, 0, 0)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "normalization (0, 1)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "Alice marginal (0, 0, 1)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "Alice marginal (1, 0, 1)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "Bob marginal (0, 0, 1)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "Bob marginal (1, 0, 1)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "normalization (1, 0)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "Alice marginal (0, 1, 0)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "Alice marginal (1, 1, 0)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "Bob marginal (0, 1, 0)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "Bob marginal (1, 1, 0)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "normalization (1, 1)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "Alice marginal (0, 1, 1)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "Alice marginal (1, 1, 1)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "Bob marginal (0, 1, 1)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "Bob marginal (1, 1, 1)"
+  },
+  {
+    "group": "noisy_box",
+    "name": "CHSH 81/25"
+  },
+  {
+    "group": "noisy_box",
+    "name": "squared excess"
+  },
+  {
+    "group": "five_clique",
+    "name": "listed local witness (0, 1)"
+  },
+  {
+    "group": "five_clique",
+    "name": "listed local witness (0, 2)"
+  },
+  {
+    "group": "five_clique",
+    "name": "listed local witness (0, 3)"
+  },
+  {
+    "group": "five_clique",
+    "name": "listed local witness (0, 4)"
+  },
+  {
+    "group": "five_clique",
+    "name": "listed local witness (1, 2)"
+  },
+  {
+    "group": "five_clique",
+    "name": "listed local witness (1, 3)"
+  },
+  {
+    "group": "five_clique",
+    "name": "listed local witness (1, 4)"
+  },
+  {
+    "group": "five_clique",
+    "name": "listed local witness (2, 3)"
+  },
+  {
+    "group": "five_clique",
+    "name": "listed local witness (2, 4)"
+  },
+  {
+    "group": "five_clique",
+    "name": "listed local witness (3, 4)"
+  },
+  {
+    "group": "five_clique",
+    "name": "both copies win 0"
+  },
+  {
+    "group": "five_clique",
+    "name": "both copies win 1"
+  },
+  {
+    "group": "five_clique",
+    "name": "both copies win 2"
+  },
+  {
+    "group": "five_clique",
+    "name": "both copies win 3"
+  },
+  {
+    "group": "five_clique",
+    "name": "both copies win 4"
+  },
+  {
+    "group": "five_clique",
+    "name": "exact sum"
+  },
+  {
+    "group": "five_clique",
+    "name": "neutrality obstruction"
+  },
+  {
+    "group": "five_clique",
+    "name": "frequency-distance obstruction"
+  },
+  {
+    "group": "five_clique",
+    "name": "parity-completion obstruction"
+  },
+  {
+    "group": "frequency",
+    "name": "equal endpoint risks"
+  },
+  {
+    "group": "frequency",
+    "name": "asymptotic floor"
+  },
+  {
+    "group": "frequency",
+    "name": "risk convexity coefficient"
+  },
+  {
+    "group": "frequency",
+    "name": "compression risk formula at optimizer"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=1"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=1"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=2"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=2"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=3"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=3"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=4"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=4"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=5"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=5"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=6"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=6"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=7"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=7"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=8"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=8"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=9"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=9"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=10"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=10"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=11"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=11"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=12"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=12"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=13"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=13"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=14"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=14"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=15"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=15"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=16"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=16"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=17"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=17"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=18"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=18"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=19"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=19"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=20"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=20"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=21"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=21"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=22"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=22"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=23"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=23"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=24"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=24"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=25"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=25"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=26"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=26"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=27"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=27"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=28"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=28"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=29"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=29"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=30"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=30"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=31"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=31"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=32"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=32"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=33"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=33"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=34"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=34"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=35"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=35"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=36"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=36"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=37"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=37"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=38"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=38"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=39"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=39"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=40"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=40"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=41"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=41"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=42"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=42"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=43"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=43"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=44"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=44"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=45"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=45"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=46"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=46"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=47"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=47"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=48"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=48"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=49"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=49"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=50"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=50"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=51"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=51"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=52"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=52"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=53"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=53"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=54"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=54"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=55"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=55"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=56"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=56"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=57"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=57"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=58"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=58"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=59"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=59"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=60"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=60"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=61"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=61"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=62"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=62"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=63"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=63"
+  },
+  {
+    "group": "frequency",
+    "name": "optimizer lies in the allowed interval L=64"
+  },
+  {
+    "group": "frequency",
+    "name": "positive distance from asymptotic floor L=64"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "commutation t=0"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "idempotence (0, 0, 0)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "Hermitian (0, 0, 0)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "trace one (0, 0, 0)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "idempotence (0, 0, 1)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "Hermitian (0, 0, 1)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "trace one (0, 0, 1)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "idempotence (0, 1, 0)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "Hermitian (0, 1, 0)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "trace one (0, 1, 0)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "idempotence (0, 1, 1)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "Hermitian (0, 1, 1)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "trace one (0, 1, 1)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "completeness 0"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "orthogonality (0, 0, 1)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "orthogonality (0, 0, 2)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "orthogonality (0, 0, 3)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "orthogonality (0, 1, 2)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "orthogonality (0, 1, 3)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "orthogonality (0, 2, 3)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "commutation t=1"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "idempotence (1, 0, 0)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "Hermitian (1, 0, 0)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "trace one (1, 0, 0)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "idempotence (1, 0, 1)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "Hermitian (1, 0, 1)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "trace one (1, 0, 1)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "idempotence (1, 1, 0)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "Hermitian (1, 1, 0)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "trace one (1, 1, 0)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "idempotence (1, 1, 1)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "Hermitian (1, 1, 1)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "trace one (1, 1, 1)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "completeness 1"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "orthogonality (1, 0, 1)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "orthogonality (1, 0, 2)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "orthogonality (1, 0, 3)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "orthogonality (1, 1, 2)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "orthogonality (1, 1, 3)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "orthogonality (1, 2, 3)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "decoder unitarity"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "upper record is XX"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "lower record is ZZ"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "optimal correlator (0, 0)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "optimal correlator (0, 1)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "optimal correlator (1, 0)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "optimal correlator (1, 1)"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "rotated observable binary"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "noncommuting aligned parities"
+  },
+  {
+    "group": "quantum_parity",
+    "name": "squared commutator norm"
+  },
+  {
+    "group": "T2_witnesses",
+    "name": "X parity sector (0, 0)"
+  },
+  {
+    "group": "T2_witnesses",
+    "name": "Y parity sector (0, 0)"
+  },
+  {
+    "group": "T2_witnesses",
+    "name": "X parity sector (0, 1)"
+  },
+  {
+    "group": "T2_witnesses",
+    "name": "Y parity sector (0, 1)"
+  },
+  {
+    "group": "T2_witnesses",
+    "name": "X parity sector (1, 0)"
+  },
+  {
+    "group": "T2_witnesses",
+    "name": "Y parity sector (1, 0)"
+  },
+  {
+    "group": "T2_witnesses",
+    "name": "X parity sector (1, 1)"
+  },
+  {
+    "group": "T2_witnesses",
+    "name": "Y parity sector (1, 1)"
+  },
+  {
+    "group": "instrument",
+    "name": "compatible readout before reset"
+  },
+  {
+    "group": "instrument",
+    "name": "compatible readout after reset"
+  },
+  {
+    "group": "running_example",
+    "name": "sum frequency r=0,j=0"
+  },
+  {
+    "group": "running_example",
+    "name": "sum frequency r=0,j=1"
+  },
+  {
+    "group": "running_example",
+    "name": "sum frequency r=0,j=2"
+  },
+  {
+    "group": "running_example",
+    "name": "sum frequency r=1/3,j=0"
+  },
+  {
+    "group": "running_example",
+    "name": "sum frequency r=1/3,j=1"
+  },
+  {
+    "group": "running_example",
+    "name": "sum frequency r=1/3,j=2"
+  },
+  {
+    "group": "running_example",
+    "name": "sum frequency r=1,j=0"
+  },
+  {
+    "group": "running_example",
+    "name": "sum frequency r=1,j=1"
+  },
+  {
+    "group": "running_example",
+    "name": "sum frequency r=1,j=2"
+  },
+  {
+    "group": "capacity_witness",
+    "name": "four aligned labels form an orthonormal frame"
+  },
+  {
+    "group": "capacity_witness",
+    "name": "four aligned labels saturate dimension four"
+  },
+  {
+    "group": "capacity_witness",
+    "name": "frame leaves no orthogonal residual vector"
+  },
+  {
+    "group": "capacity_witness",
+    "name": "Hadamard interchanges Z and X"
+  },
+  {
+    "group": "capacity_witness",
+    "name": "Hadamard interchanges X and Z"
+  },
+  {
+    "group": "capacity_witness",
+    "name": "Hadamard has an available inverse in quantum example"
+  },
+  {
+    "group": "capacity_witness",
+    "name": "aligned first parity maps to crossed first parity"
+  },
+  {
+    "group": "capacity_witness",
+    "name": "aligned second parity maps to crossed second parity"
+  },
+  {
+    "group": "capacity_witness",
+    "name": "spectator product frame rank 1"
+  },
+  {
+    "group": "capacity_witness",
+    "name": "spectator frame completeness 1"
+  },
+  {
+    "group": "capacity_witness",
+    "name": "spectator product frame rank 2"
+  },
+  {
+    "group": "capacity_witness",
+    "name": "spectator frame completeness 2"
+  },
+  {
+    "group": "capacity_witness",
+    "name": "spectator product frame rank 3"
+  },
+  {
+    "group": "capacity_witness",
+    "name": "spectator frame completeness 3"
+  },
+  {
+    "group": "identity_game",
+    "name": "all five-label four-symbol maps satisfy diagonal bound"
+  },
+  {
+    "group": "identity_game",
+    "name": "classical success bound attained"
+  },
+  {
+    "group": "identity_game",
+    "name": "number of deterministic maps examined"
+  },
+  {
+    "group": "identity_game",
+    "name": "general robust payoff excess"
+  },
+  {
+    "group": "identity_game",
+    "name": "threshold for no spectator"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "opposite normalized vertex 0"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "opposite normalized vertex 1"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "opposite normalized vertex 2"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "opposite normalized vertex 3"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "pairwise distinguishability despite failure of IV (0, 1)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "pairwise distinguishability despite failure of IV (0, 2)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "pairwise distinguishability despite failure of IV (0, 3)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "pairwise distinguishability despite failure of IV (1, 2)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "pairwise distinguishability despite failure of IV (1, 3)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "pairwise distinguishability despite failure of IV (2, 3)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "center domination decomposition (0, 0)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "center domination decomposition (0, 1)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "center domination decomposition (0, 2)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "center domination decomposition (0, 3)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "center domination decomposition (1, 0)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "center domination decomposition (1, 1)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "center domination decomposition (1, 2)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "center domination decomposition (1, 3)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "center domination decomposition (2, 0)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "center domination decomposition (2, 1)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "center domination decomposition (2, 2)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "center domination decomposition (2, 3)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "center domination decomposition (3, 0)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "center domination decomposition (3, 1)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "center domination decomposition (3, 2)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "center domination decomposition (3, 3)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "elementary physical effect (0, 0)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "elementary physical effect (0, 1)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "elementary physical effect (0, 2)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "elementary physical effect (0, 3)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "elementary physical effect (1, 0)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "elementary physical effect (1, 1)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "elementary physical effect (1, 2)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "elementary physical effect (1, 3)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "elementary physical effect (2, 0)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "elementary physical effect (2, 1)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "elementary physical effect (2, 2)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "elementary physical effect (2, 3)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "elementary physical effect (3, 0)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "elementary physical effect (3, 1)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "elementary physical effect (3, 2)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "elementary physical effect (3, 3)"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "local effect normalization"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "four product messages are readable"
+  },
+  {
+    "group": "HS_capacity",
+    "name": "product frame measurement normalization"
+  },
+  {
+    "group": "HS_witness",
+    "name": "seven-outcome measurement normalization"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (0, 0)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (0, 1)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (0, 2)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (0, 3)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (0, 4)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (0, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (0, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (1, 0)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (1, 1)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (1, 2)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (1, 3)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (1, 4)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (1, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (1, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (2, 0)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (2, 1)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (2, 2)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (2, 3)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (2, 4)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (2, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (2, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (3, 0)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (3, 1)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (3, 2)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (3, 3)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (3, 4)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (3, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (3, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (4, 0)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (4, 1)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (4, 2)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (4, 3)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (4, 4)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (4, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (4, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (5, 0)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (5, 1)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (5, 2)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (5, 3)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (5, 4)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (5, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (5, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (6, 0)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (6, 1)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (6, 2)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (6, 3)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (6, 4)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (6, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (6, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (7, 0)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (7, 1)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (7, 2)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (7, 3)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (7, 4)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (7, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (7, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (8, 0)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (8, 1)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (8, 2)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (8, 3)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (8, 4)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (8, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (8, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (9, 0)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (9, 1)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (9, 2)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (9, 3)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (9, 4)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (9, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (9, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (10, 0)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (10, 1)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (10, 2)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (10, 3)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (10, 4)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (10, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (10, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (11, 0)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (11, 1)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (11, 2)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (11, 3)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (11, 4)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (11, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (11, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (12, 0)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (12, 1)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (12, 2)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (12, 3)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (12, 4)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (12, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (12, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (13, 0)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (13, 1)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (13, 2)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (13, 3)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (13, 4)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (13, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (13, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (14, 0)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (14, 1)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (14, 2)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (14, 3)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (14, 4)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (14, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (14, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (15, 0)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (15, 1)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (15, 2)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (15, 3)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (15, 4)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (15, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "positive normalized effect on product vertex (15, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "published channel from explicit states and effects"
+  },
+  {
+    "group": "HS_witness",
+    "name": "published payoff"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (0, 1, 2, 3)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (0, 1, 2, 3)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (0, 1, 2, 4)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (0, 1, 2, 4)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (0, 1, 2, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (0, 1, 2, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (0, 1, 2, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (0, 1, 2, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (0, 1, 3, 4)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (0, 1, 3, 4)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (0, 1, 3, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (0, 1, 3, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (0, 1, 3, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (0, 1, 3, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (0, 1, 4, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (0, 1, 4, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (0, 1, 4, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (0, 1, 4, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (0, 1, 5, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (0, 1, 5, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (0, 2, 3, 4)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (0, 2, 3, 4)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (0, 2, 3, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (0, 2, 3, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (0, 2, 3, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (0, 2, 3, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (0, 2, 4, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (0, 2, 4, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (0, 2, 4, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (0, 2, 4, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (0, 2, 5, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (0, 2, 5, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (0, 3, 4, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (0, 3, 4, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (0, 3, 4, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (0, 3, 4, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (0, 3, 5, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (0, 3, 5, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (0, 4, 5, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (0, 4, 5, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (1, 2, 3, 4)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (1, 2, 3, 4)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (1, 2, 3, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (1, 2, 3, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (1, 2, 3, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (1, 2, 3, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (1, 2, 4, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (1, 2, 4, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (1, 2, 4, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (1, 2, 4, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (1, 2, 5, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (1, 2, 5, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (1, 3, 4, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (1, 3, 4, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (1, 3, 4, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (1, 3, 4, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (1, 3, 5, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (1, 3, 5, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (1, 4, 5, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (1, 4, 5, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (2, 3, 4, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (2, 3, 4, 5)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (2, 3, 4, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (2, 3, 4, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (2, 3, 5, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (2, 3, 5, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (2, 4, 5, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (2, 4, 5, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "analytic maximum formula for columns (3, 4, 5, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical bound for columns (3, 4, 5, 6)"
+  },
+  {
+    "group": "HS_witness",
+    "name": "classical four-symbol maximum"
+  },
+  {
+    "group": "HS_witness",
+    "name": "exact published hypersignaling gap"
+  },
+  {
+    "group": "HS_witness",
+    "name": "all thirty-five classical column sets checked"
+  }
+]
