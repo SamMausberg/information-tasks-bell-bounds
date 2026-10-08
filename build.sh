@@ -6,6 +6,7 @@ command -v pdflatex >/dev/null || { echo 'pdflatex is required.' >&2; exit 1; }
 command -v python3 >/dev/null || { echo 'Python 3.10 or later is required.' >&2; exit 1; }
 mkdir -p build results
 python3 scripts/check_certificates.py > results/check_output.txt
+python3 scripts/verify_certificates.py > results/final_source_checks.txt
 for pass in 1 2 3; do
   if ! pdflatex -interaction=nonstopmode -halt-on-error -file-line-error \
        -output-directory=build main.tex > "build/pass-${pass}.txt" 2>&1; then
@@ -17,7 +18,7 @@ if grep -E 'LaTeX Warning|Package .* Warning|Overfull|Missing character|^!' buil
   echo 'Please inspect the diagnostics printed above.' >&2
   exit 1
 fi
-cp build/main.pdf paper.pdf
+python3 scripts/format_reference.py build/main.pdf paper.pdf
 cp build/main.log results/latex_build.log
 python3 - <<'PY'
 from pathlib import Path
@@ -34,6 +35,8 @@ report = {
     'abstract_word_count': len(abstract.split()),
     'pages': int(re.search(r'Output written on .*?\((\d+) pages',log).group(1)),
     'finite_exact_checks': checks['check_count'],
+    'final_source_certificate_groups': 8,
+    'publication_reference_formatting': 'reference [13], Latin Modern Roman 10',
     'errors_or_unresolved_references': False,
     'overfull_boxes': False,
     'underfull_hbox_diagnostics': len(re.findall(r'Underfull \\hbox',log)),

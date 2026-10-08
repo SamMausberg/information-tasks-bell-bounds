@@ -1,156 +1,137 @@
-% Preserve modern LaTeX's label hook when the class loads ltxgrid.
 \let\QuantumKernelLabel\label
-\documentclass[a4paper,twocolumn,11pt]{quantumarticle}
+\documentclass[a4paper,11pt,twocolumn,unpublished]{quantumarticle}
 \pdfoutput=1
-\makeatletter
+% Preserve the current LaTeX label hook across the class's older ltxutil layer.
 \let\label\QuantumKernelLabel
-\let\ltx@label\QuantumKernelLabel
-\patchcmd{\@maketitle}{\begin{minipage}{\textwidth}}{\begin{minipage}{\textwidth}\raggedright}{}{\PackageError{paper}{Title layout patch failed}{Use the bundled quantumarticle class}}
-\providecommand\caption@documentclass{standard}
-\makeatother
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath,amssymb,amsthm,mathtools}
-\usepackage{hyperref,graphicx,microtype,float}
-\usepackage{tikz}
-\usetikzlibrary{arrows.meta,positioning,fit,backgrounds}
-\usepackage{pgfplots}
+\usepackage{tikz,pgfplots}
+\usetikzlibrary{arrows.meta,positioning,calc}
 \pgfplotsset{compat=1.18}
-\usepackage{quantikz}
+\renewcommand{\topfraction}{.9}
+\renewcommand{\bottomfraction}{.9}
+\renewcommand{\textfraction}{.05}
+\setcounter{topnumber}{4}
+\setcounter{totalnumber}{5}
+\usepackage{microtype}
+% quantumarticle uses the standard caption layout with a small sans-serif font.
+\makeatletter\def\caption@documentclass{standard}\makeatother
+\usepackage[font={small,sf},labelfont=normalfont,labelsep=colon]{caption}
 \usepackage[numbers,sort&compress]{natbib}
-\hypersetup{pdftitle={From information tasks to exclusivity and Bell bounds},pdfauthor={Samuel Mausberg},pdfsubject={Constructor theory, parity domains, information capacity and conditional Bell bounds}}
+\usepackage{hyperref}
 \newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}[section]
 \newtheorem{lemma}{Lemma}[section]
-\newtheorem{proposition}[lemma]{Proposition}
-\newtheorem{corollary}[lemma]{Corollary}
-\theoremstyle{definition}
-\newtheorem{definition}[lemma]{Definition}
+\DeclareMathOperator{\cl}{cl}
+\DeclareMathOperator{\capn}{cap}
 \DeclareMathOperator{\Tr}{Tr}
 \DeclareMathOperator{\supp}{supp}
-\DeclareMathOperator{\spanop}{span}
-\DeclareMathOperator{\rank}{rank}
-\DeclareMathOperator{\capinfo}{cap}
-\newcommand{\cl}[1]{\overline{\overline{#1}}}
-\newcommand{\C}{\mathbb C}
-\newcommand{\R}{\mathbb R}
-\newcommand{\bits}{\{0,1\}}
+\DeclareMathOperator{\Span}{span}
+\newcommand{\ket}[1]{\lvert #1\rangle}
+\newcommand{\bra}[1]{\langle #1\rvert}
+\newcommand{\ddbar}[1]{\overline{\overline{#1}}}
 \newcommand{\eps}{\varepsilon}
-\newcommand{\norm}[1]{\lVert#1\rVert}
-\newcommand{\abs}[1]{\lvert#1\rvert}
-\renewcommand{\ket}[1]{\lvert#1\rangle}
-\renewcommand{\bra}[1]{\langle#1\rvert}
-\renewcommand{\proj}[1]{\ket{#1}\!\bra{#1}}
-\newcommand{\id}{\mathrm{id}}
-\setlength{\emergencystretch}{1.2em}
-\hyphenation{non-sig-nal-ling non-per-tur-ba-tion}
-\begin{document}
+\newcommand{\EW}{\mathbb E_w}
+\newcommand{\drec}{d_{\mathrm{rec}}}
+\newcommand{\arxivref}[1]{\href{https://arxiv.org/abs/#1}{arXiv:#1}}
 \title{From information tasks to exclusivity and Bell bounds}
 \author{Samuel Mausberg}
 \affiliation{Independent Researcher}
 \date{3 October 2026}
-\begin{abstract}
-Can possible information tasks explain the quantum bound on Bell correlations? We prove a conditional answer without assuming a quantum state space. Operational frequency homogeneity and calibrated measurement coverage give consistent exclusivity. Keeping an additional record in each two-copy parity measurement yields an explicit Bell bound in terms of the weights of those residual records. Marletto's T2 supplies four aligned parity sectors; a missing domain then forces an extra distinguishable label on the composite. A spectator-stable capacity bound and a reversible setting interchange remove the residual records and recover the sharp quantum bound. We distinguish this capacity premise from no-hypersignaling, which constrains all prepare-and-read statistics, and give the precise additional assumptions connecting them. A preparable missing domain then produces an explicit communication witness. The remaining question is whether the constructor information principles already enforce the capacity bound and setting interchange.
-\end{abstract}
+\begin{document}
 \maketitle
+\begin{abstract}
+Can possible information tasks explain the quantum bound on Bell correlations? We obtain a conditional bound, without assuming a quantum state space, and identify the additional task requirements that recover the quantum value. Homogeneous frequency limits and common calibration domains imply consistent exclusivity. Completing two-copy parity measurements with an ``other'' outcome gives a Bell bound controlled by the weights of these residual records. Marletto's T2 supplies four aligned parity sectors. A missing domain then requires an extra distinguishable label. An upper bound on readable labels, stable under adjoining spectators, and a reversible setting interchange remove the residual records. No-hypersignaling supplies this capacity bound when the relevant preparations are accessible and local signaling dimensions match the label counts. The result separates measurement existence, domain coverage, and readout weights.
+\end{abstract}
 
 \section{Introduction}
-A Bell experiment has two separated laboratories, each choosing between two binary measurements. Quantum theory bounds the familiar CHSH correlation expression by $2\sqrt2$, although its algebraic maximum is four. Can constructor theory explain the smaller number through laws about possible and impossible information tasks \citep{DM,M}? We prove a conditional bound and isolate what its missing premise must accomplish. The issue is not the existence of a discriminator for joint parity labels. It is whether those labels cover the preparation used in the experiment.
+A Bell experiment has two separated laboratories, each choosing between two binary measurements. Quantum theory bounds the Clauser--Horne--Shimony--Holt (CHSH) correlation expression by $2\sqrt2$, although its algebraic maximum is four. Can constructor theory explain the smaller number through laws about possible and impossible information tasks \cite{cti,ctp}? We prove a conditional bound and isolate what its domain premise must accomplish. The issue is not the existence of a discriminator for joint parity labels. It is whether those labels cover the preparation used in the experiment.
 
 The answer can be stated operationally. Add an ``other'' record to each of the aligned and crossed two-copy parity discriminators. If their respective weights are $\eps_0$ and $\eps_1$, then our task premises imply
-\begin{equation}
- B^2\leq8+4(\eps_0+\eps_1)+288\kappa,
- \label{eq:headline}
+\begin{equation}\label{eq:headline}
+ B^2\leq 8+4(\eps_0+\eps_1)+288\kappa,
 \end{equation}
 where $\kappa$ bounds discrepancies between readouts with the same calibration. Homogeneous frequency tasks make $\kappa$ vanish. Parity-domain coverage makes both residual records vanish. Equation~\eqref{eq:headline} then gives the sharp quantum bound, with no quantum state space in the proof.
 
-The result also gives a way to test the missing domain condition. T2 supplies four distinguishable aligned parity sectors. If there is no room for an additional distinguishable information label, these sectors cover the substrate. The same argument must remain valid when a spectator is attached. A reversible task interchanging the two tested settings then supplies crossed coverage. We prove this capacity criterion, but do not derive its capacity bound or setting interchange from T2.
+The result also gives a way to test the missing domain condition. T2 supplies four distinguishable aligned parity sectors. If there is no room for an additional distinguishable label, these sectors cover the substrate. The same argument must remain valid when another system---a spectator---is attached. A reversible task interchanging the two tested settings then supplies crossed coverage. We prove this capacity criterion, but do not derive its full-substrate capacity bound or setting interchange from T2.
 
-A pair of qubits provides a running example. Fix the second qubit to $\ket+=(\ket0+\ket1)/\sqrt2$ and leave the first unspecified. The sign of the second qubit is a perfectly readable and copyable label, yet the frequencies of the total computational-bit measurement depend on the first qubit. Specifying the preparation resolves that ambiguity. On two completely specified qubits, the four Bell labels exhaust the distinguishable information and jointly record two parities. These are different requirements: a frequency domain must be homogeneous, while a parity domain must be large enough.
+A pair of qubits provides a running example. Fix the second qubit to $\ket+ = (\ket0+\ket1)/\sqrt2$ and leave the first unspecified. The sign of the second qubit is a perfectly readable and copyable label, yet the frequencies of the total computational-bit measurement depend on the first qubit. Specifying the preparation resolves that ambiguity. On two completely specified qubits, the four Bell labels exhaust the distinguishable information and jointly record two parities. These are different requirements: a frequency domain must be homogeneous, while a parity domain must be large enough.
 
-We present three results. The first turns an operational frequency condition into calibrated weight neutrality and consistent exclusivity. The second proves Eq.~\eqref{eq:headline} by keeping the residual records in Cabello's two-copy construction \citep{Cabello}. The third expresses parity coverage as a consequence of information-capacity saturation and a reversible setting-interchange task. The proofs allow arbitrary state-space dimension and do not use an inner product, local tomography, or a rule assigning Born probabilities.
+We present three results. The first turns an operational frequency condition into calibrated weight neutrality and consistent exclusivity (CE). The second proves Eq.~\eqref{eq:headline} by keeping the residual records in Cabello's two-copy construction \cite{cabello}. The third expresses parity coverage as a consequence of information-capacity saturation and a reversible setting-interchange task. The proofs allow arbitrary state-space dimension and do not use an inner product, local tomography, or a rule assigning Born probabilities.
 
-The relation between nonlocal states and joint measurements is established prior work. Short and Barrett identify the trade-off in boxworld \citep{SB}. Czekaj, Horodecki, and Tylec constrain correlations by adding a Bell measurement \citep{CHT}. Cabello's extra two-copy contexts supply our final counting argument \citep{Cabello}. We do not claim that joint measurements restrict nonlocality for the first time. The contribution is a finite-resolution connection from task calibration to weights, a bound retaining unresolved-domain records, and a distinguishable-label certificate for those domains.
-
-The last certificate has a precise relation to no-hypersignaling \citep{NHS}. Recording distinct labels is a narrower task than simulating every prepare-and-read distribution. We show how no-hypersignaling implies the needed capacity bound when local signaling dimensions match the available label counts and the witnessing attributes are preparable. An exact comparison with the published hypersignaling model shows why those qualifications matter. Section~\ref{sec:discussion} places these results against sharpness, exclusivity, and parity-reading approaches.
-
-\begin{figure}[!t]
+\begin{figure}[!htbp]
 \centering
-\input{figures/route.tex}
-\caption{The three steps. H and C connect task calibration to weights. Completing a joint parity discriminator always adds a possible residual record, whose weight appears explicitly in the Bell bound. Capacity saturation and reversible setting interchange are sufficient task conditions for removing it.}
-\label{fig:route}
+\begin{tikzpicture}[node distance=3.8mm,box/.style={draw,rounded corners=1pt,text width=.91\columnwidth,align=center,inner sep=4pt,font=\small},>=Stealth]
+\node[box] (a) {H: homogeneous frequency tasks\\C: common calibration domains};
+\node[box,below=of a] (b) {IV, V, VIII: task completion\\Exclusivity with error $m\kappa$};
+\node[box,below=of b] (c) {Keep the residual parity records\\$B^2\leq8+4(\eps_0+\eps_1)+288\kappa$};
+\node[box,below=of c] (d) {T2 + capacity bound + setting interchange\\No residual attribute: $|B|\leq2\sqrt2$};
+\draw[->] (a)--(b);\draw[->] (b)--(c);\draw[->] (c)--(d);
+\end{tikzpicture}
+\caption{The three steps, under the record-weight and composition conventions of Sec.~2. H and C connect task calibration to weights. Completing a joint parity discriminator retains a possible residual record, whose weight appears in the Bell bound. Capacity saturation and reversible setting interchange remove it.}
+\label{fig:logic}
 \end{figure}
 
+The relation between nonlocal states and joint measurements is established prior work. Short and Barrett identify the trade-off in boxworld \cite{short}. Czekaj, Horodecki, and Tylec constrain correlations by adding a Bell measurement \cite{czekaj}. Cabello's extra two-copy contexts supply our final counting argument \cite{cabello}. The contribution here is a finite-resolution connection from task calibration to weights, a bound retaining unresolved-domain records, and a distinguishable-label certificate for those domains.
+
+The last certificate has a precise relation to no-hypersignaling \cite{hs}. Recording distinct labels is a narrower task than simulating every prepare-and-read distribution. We show how no-hypersignaling implies the needed capacity bound when local signaling dimensions match the available label counts and the witnessing attributes are preparable. An exact comparison with the published hypersignaling model shows why those qualifications matter. Section~7 places these results against sharpness, exclusivity, and parity-reading approaches.
+
 \section{Tasks, preparations, and decision weights}
-\label{sec:premises}
-We formulate the premises before proving the implication. Locators for Ref.~\citep{DM} use its arXiv v2, with printed page numbers. For Ref.~\citep{M}, we give named conditions and published section locators, supplemented by arXiv v3 pages where useful. These version choices avoid confusing a quantifier over a selected observable with one over every laboratory setting.
+Locators for Refs.~\cite{cti,ctp} refer to arXiv versions v2 and v3, respectively, using their printed page numbers and named conditions. In particular, a condition on a selected observable is not a condition on every laboratory setting.
 
 \subsection{The task principles used}
-An attribute is a set of states. A task specifies an output attribute for every legitimate input attribute, and must work throughout that input set \citep[Sec.~2(a,b)]{M}. We write $a\perp b$ when a possible discrimination task distinguishes them. Possible means arbitrarily accurately achievable, with no finite bound on the required accuracy \citep[Sec.~2]{DM}. Distinguishability is symmetric, is inherited by subsets, and no nonempty attribute is distinguishable from itself.
+An attribute is a set of states. A task specifies an output attribute for every legitimate input attribute, and must work throughout that input set \cite[Sec.~2, pp.~8--11]{ctp}. We write $a\perp b$ when a possible discrimination task distinguishes them. Possible means arbitrarily accurately achievable, with no finite bound on the required accuracy \cite[Sec.~2, p.~8]{cti}. Distinguishability is symmetric, is inherited by subsets, and no nonempty attribute is distinguishable from itself.
 
-The information principles are imposed on every finite composite. Interoperability allows independent information variables and their records to be combined; generic resources and task composition allow finite recording and counting networks \citep[Sec.~6, III, VI, VII, pp.~12--14]{DM}. Principle IV supplies a common discriminator for any finite pairwise distinguishable variable. Principle V upgrades statewise distinguishability to distinguishability of the whole attribute \citep[Sec.~6, pp.~12--13]{DM}. Thus, with $\Omega$ the state set of the substrate,
-\begin{equation}
- \overline a=\{s\in\Omega:\{s\}\perp a\},\qquad
- \operatorname{cl}(a):=\cl a
- \label{eq:closure}
+The information principles are imposed on every finite composite. Interoperability allows independent information variables and their records to be combined; generic resources and task composition allow finite recording and counting networks \cite[Sec.~6, III, VI, VII, pp.~12--14]{cti}. Principle IV supplies a common discriminator for any finite pairwise distinguishable variable. Principle V upgrades statewise distinguishability to distinguishability of the whole attribute \cite[Sec.~6, p.~13]{cti}. Thus, with $\Omega$ the state set of the substrate,
+\begin{equation}\label{eq:bar}
+ \overline a=\{s\in\Omega:\{s\}\perp a\},\qquad \cl(a):=\ddbar a
 \end{equation}
-is an orthogonality closure. An observable attribute is closed under this operation. We use the finite-task portion of the information principles. Principle IX concerns ensemble discrimination and is not needed in these finite constructions \citep[Sec.~6, p.~19]{DM}. The local-description condition II is not identified with operational local tomography \citep[Sec.~2, arXiv p.~12]{M}.
+is an orthogonality closure. An observable attribute is closed under this operation. We use the finite-task portion of the information principles. Principle IX concerns ensemble discrimination and is not needed in these finite constructions \cite[Sec.~6, p.~19]{cti}. The local-description condition II is not identified with operational local tomography \cite[Sec.~2, p.~12]{ctp}.
 
 For a finite measurable variable $X=\{x_i\}$, let
-\begin{equation}
- D_X=\operatorname{cl}\!\left(\bigcup_i x_i\right).
- \label{eq:domain}
+\begin{equation}\label{eq:domain}
+ D_X=\cl\!\left(\bigcup_i x_i\right).
 \end{equation}
-A measurer is calibrated by the task $x_i\mapsto\text{record }i$. Nonperturbation, when required, means retention of the input attribute, not preservation of every compatible readout \citep[Sec.~5, Eqs.~(4)--(5), pp.~11--12]{DM}. Principle VIII says that all measurers of $X$ agree on every sharp output on $D_X$ \citep[Sec.~6, p.~16]{DM}. Its observable-closure consequence is that a coarse detector for an outcome $x_i$ is sharp on $\operatorname{cl}(x_i)$ \citep[Sec.~6, pp.~16--18]{DM}. Appendix~\ref{app:tasks} states the precise completion properties we use.
+A measurer is calibrated by the task $x_i\mapsto\text{record }i$. Nonperturbation, when required, means retention of the input attribute, not preservation of every compatible readout \cite[Sec.~5, Eqs.~(4)--(5), pp.~11--12]{cti}. Principle VIII says that all measurers of $X$ agree on every sharp output on $D_X$ \cite[Sec.~6, p.~16]{cti}. Its observable-closure consequence is that a coarse detector for an outcome $x_i$ is sharp on $\cl(x_i)$ \cite[Sec.~6, pp.~16--18]{cti}. Appendix~\ref{app:closure} states the precise completion properties we use.
 
-These premises do not require a stochastic dynamics. We use ideal readouts in the task-accuracy closure: their record weights are limits of attainable readouts, and finite compositions and postprocessings respect these limits. This is an explicit accuracy convention, not an assertion that perfect constructors physically exist. The source asks subsidiary theories to provide suitable approximation structure \citep[Sec.~2, principle I; arXiv p.~12]{M}; the operational choice below is additional. When transporting attributes through a physical implementation, we represent it by a total transformation; its action outside the task's calibration inputs is otherwise unconstrained. This is also part of our operational convention. A finite operational representation of arbitrary dimension is sufficient, but the proofs do not require one.
+These premises do not require a stochastic dynamics. We use ideal readouts in the task-accuracy closure: their record weights are limits of attainable readouts, and finite compositions and postprocessings respect these limits. This is an explicit accuracy convention, not an assertion that perfect constructors physically exist. The source asks subsidiary theories to provide suitable approximation structure \cite[Sec.~2, principle I, p.~12]{ctp}; the operational choice below is additional. When transporting attributes through a physical implementation, we represent it by a total transformation; its action outside the task's calibration inputs is otherwise unconstrained. This is also part of our operational convention. A finite operational representation of arbitrary dimension is sufficient, but the proofs do not require one.
 
 \subsection{The record-weight bridge}
 For a readout $M$, its record $i$, and a completely specified preparation $\omega$, write $w(M,i\mid\omega)$ for the derived decision weight. Weights are nonnegative and normalized. A sharp record has weight one, and grouping records adds their weights. Parallel repetition on independent instances has the same single-instance marginal weights. In the two-copy Bell argument, we also require
-\begin{equation}
+\begin{equation}\label{eq:product}
  w(e,e'\mid\omega\otimes\omega)=w(e\mid\omega)w(e'\mid\omega)
- \label{eq:factorization}
 \end{equation}
-for independently prepared experiments. This is Cabello's product premise \citep[step I, Eq.~(4)]{Cabello}. These finite-record rules are explicit bridges. Nonsignalling alone does not supply the product rule.
+for independently prepared experiments. This is Cabello's product premise \cite[step I, Eq.~(4)]{cabello}. These finite-record rules are explicit bridges. Nonsignalling alone does not supply the product rule.
 
-We interpret these numbers as the values of zero-one games played on the final records \citep[Secs.~6--7]{M}. In particular, measurement neutrality P4 identifies the values of different implementations of the same game. Its published scope is important: T1/T2 select observables, rather than asserting a decision-weight extension for every possible readout. We assume the finite-record calculus on the calibrated networks used below. Theorem~\ref{thm:ce} gives a second, quantitative route to their implementation independence; it does not rederive the whole decision-theoretic representation theorem.
+We interpret these numbers as the values of zero-one games played on the final records \cite[Secs.~6--7]{ctp}. In particular, measurement neutrality P4 identifies the values of different implementations of the same game \cite[Sec.~7.2, p.~37]{ctp}. Its scope is important: T1/T2 select observables, rather than asserting a decision-weight extension for every possible readout. We assume the finite-record calculus on the calibrated networks used below. Theorem~\ref{thm:frequency} gives a second, quantitative route to their implementation independence; it does not rederive the whole decision-theoretic representation theorem.
 
 Define an operational pseudometric on preparations of a fixed substrate by
-\begin{equation}
- d(\omega,\sigma)=\sup_{M\ \mathrm{binary}}
-     \abs{w(M,1\mid\omega)-w(M,1\mid\sigma)}.
- \label{eq:distance}
+\begin{equation}\label{eq:metric}
+ d(\omega,\sigma)=\sup_{M\ \mathrm{binary}}\bigl|w(M,1\mid\omega)-w(M,1\mid\sigma)\bigr|.
 \end{equation}
 The supremum includes finite ancillary networks and their ideal readout limits. Distance to an attribute is the infimum over its members; for an empty attribute we set it to one. We make no use of the converse assertion that a weight-one outcome must be sharp.
 
 \subsection{A finite-resolution repair of T1}
-The published E2 asks for one frequency partition on each qualifying attribute; T1 applies it to a selected observable and its two-copy sum \citep[Sec.~5(a), E2; Sec.~6, T1; arXiv pp.~28, 30]{M}. Our domain consists instead of complete preparation instructions, specified independently of a measurement's weights. A coarser attribute is included only when the same limit works uniformly for all its preparations.
+Condition E2 asks for one frequency partition on each qualifying attribute; T1 applies it to a selected observable and its two-copy sum \cite[Sec.~5, E2, p.~28; Sec.~6, T1, p.~30]{ctp}. Our domain consists instead of complete preparation instructions, specified independently of a measurement's weights. A coarser attribute is included only when the same limit works uniformly for all its preparations.
 
 Here is the operational version of the limit. For a binary measurable variable $X=\{x_0,x_1\}$ and $L$ copies, form all sharp strings $x_{s_1}\otimes\cdots\otimes x_{s_L}$. For a candidate frequency $f\in[0,1]$ and resolution $h>0$, define
-\begin{equation}
- \begin{split}
- A_{X,L}(f,h)=\operatorname{cl}\!\bigcup_{\substack{s\in\bits^L\\
-                  |L^{-1}\sum_j s_j-f|\leq h}}
-                  x_{s_1}\otimes\cdots\otimes x_{s_L}.
- \end{split}
- \label{eq:window}
+\begin{equation}\label{eq:window}
+ A_{X,L}(f,h)=\cl\!\bigcup_{\substack{s\in\{0,1\}^L\\|L^{-1}\sum_j s_j-f|\leq h}}
+ x_{s_1}\otimes\cdots\otimes x_{s_L}.
 \end{equation}
 The union is a calibration attribute for the task that counts the ones and reports whether their frequency lies in the window. By VIII, every implementation of that counting task reports yes sharply on its closure. Thus Eq.~\eqref{eq:window} is defined by attributes and tasks, not by choosing an apparatus's output distribution.
 
 \paragraph{Operational homogeneity H.}
 For every complete preparation $\omega\in D_X$ and every binary comparison variable used in the proof, including those generated by discrimination completion, there is one $f$ such that, for each fixed $h>0$,
-\begin{equation}
- \delta_{X,L}(\omega;f,h):=
- d\bigl(\omega^{\otimes L},A_{X,L}(f,h)\bigr)
- \longrightarrow0.
- \label{eq:H}
+\begin{equation}\label{eq:H}
+ \delta_{X,L}(\omega;f,h):=d\bigl(\omega^{\otimes L},A_{X,L}(f,h)\bigr)\longrightarrow0.
 \end{equation}
-H makes two additions to a mere restriction of T1's domain. It chooses the operational topology for the frequency limit, and extends the frequency condition to the finite family of tested binary coarse-grainings. Neither addition is silently attributed to the printed T1. A law of large numbers for one chosen apparatus is weaker than H.
+H makes two additions to a mere restriction of T1's domain. It chooses the operational topology for the frequency limit, and extends the frequency condition to the finite family of tested binary coarse-grainings. Neither addition is attributed to the printed T1. A law of large numbers for one chosen apparatus is weaker than H.
 
 Quantum preparations satisfy H for projective variables: projection onto a frequency window gives a nearby input on which that window is sharp. Appendix~\ref{app:frequency} proves
-\begin{equation}
- \delta_{X,L}(\rho;f,h)\leq
-       \min\!\left\{1,\frac{1}{2h\sqrt L}\right\}.
- \label{eq:quantumH}
+\begin{equation}\label{eq:qH}
+ \delta_{X,L}(\rho;f,h)\leq\min\left\{1,\frac{1}{2h\sqrt L}\right\}.
 \end{equation}
 This is a consistency example only. The main theorems use Eq.~\eqref{eq:H}, not quantum projection.
 
@@ -158,395 +139,354 @@ This is a consistency example only. The main theorems use Eq.~\eqref{eq:H}, not 
 A record-producing circuit is not automatically a measurer of an input information variable. We therefore state its required coverage separately.
 
 \paragraph{Coverage C.}
-For the finite experimental scenario, there is one enlarged substrate obtained by appending fixed independent finite ancillas. Each tested context is a calibrated measurer of a finite information observable on that substrate, possibly followed by classical coarse-graining. The common enlarged preparation belongs to every corresponding domain $D_X$. The identifications of local calibration attributes persist when spectators are appended, so that a shared local setting with opposite records defines distinguishable global calibration attributes. The same condition holds for the finite independent copies used in the experiment. In the capacity argument we also use independent calibration resources: the calibration attributes in its finite frames admit nonempty independent products, and their local discriminators retain their calibration on those products. Appending any fixed member is an available total preparation map. This specifies the product-input convention used with III and VI, without imposing a numerical factorization on correlated inputs.
+For the finite experimental scenario, there is one enlarged substrate obtained by appending fixed independent finite ancillas. Each tested context is a calibrated measurer of a finite information observable on that substrate, possibly followed by classical coarse-graining. The common enlarged preparation belongs to every corresponding domain $D_X$. The identifications of local calibration attributes persist when spectators are appended, so that a shared local setting with opposite records defines distinguishable global calibration attributes. The same condition holds for the finite independent copies used in the experiment.
 
-This is a task statement about calibration, domains, and composition. It does not require a postmeasurement instrument to preserve compatible statistics. It is therefore not Chiribella--Yuan fundamental sharpness, although their dilation premise is a relevant stronger operational motivation \citep[Principle~1 and the reduction to sharp measurements]{CY}. The distinction between allowed effects and specified measurement tasks is also central to restricted-effect theories \citep[Sec.~IV]{JL}.
+In the capacity argument we also use independent calibration resources: the calibration attributes in its finite frames admit nonempty independent products, and their local discriminators retain their calibration on those products. Appending any fixed member is an available total preparation map. This specifies the product-input convention used with III and VI, without imposing a numerical factorization on correlated inputs.
+
+This is a task statement about calibration, domains, and composition. It does not require a postmeasurement instrument to preserve compatible statistics. It is therefore not Chiribella--Yuan fundamental sharpness, although their dilation premise is a relevant stronger operational motivation \cite[Principle 1 and the reduction to sharp measurements]{sharp}. The distinction between allowed effects and specified measurement tasks is also central to restricted-effect theories \cite[Sec.~IV]{restricted}.
 
 \section{From frequency limits to exclusivity}
-\label{sec:ce}
 Joint distinguishability alone supplies a new measurement, but says nothing numerical about its relation to existing readouts. The next theorem supplies that relation. Its proof concerns attributes and readout weights, without a state-space representation.
 
-\begin{theorem}[Frequency-neutral task completion]
-\label{thm:ce}
-Assume the task principles and finite-record bridge of Sec.~\ref{sec:premises}. Let $M,N$ be any two measurers of the same binary variable $X$, and let $\omega\in D_X$. For every $f,h,L$,
-\begin{equation}
- \begin{split}
- \abs{w(M,1\mid\omega)-f}&\leq h+\delta_{X,L},\\
- \abs{w(M,1\mid\omega)-w(N,1\mid\omega)}
-       &\leq2h+2\delta_{X,L}.
- \end{split}
- \label{eq:neutrality}
+\begin{theorem}[Frequency-neutral task completion]\label{thm:frequency}
+Assume the task principles and finite-record bridge of Sec.~2. Let $M,N$ be any two measurers of the same binary variable $X$, and let $\omega\in D_X$. For every $f,h,L$,
+\begin{equation}\label{eq:neutral}
+\begin{aligned}
+ |w(M,1\mid\omega)-f|&\leq h+\delta_{X,L},\\
+ |w(M,1\mid\omega)-w(N,1\mid\omega)|&\leq2h+2\delta_{X,L}.
+\end{aligned}
 \end{equation}
 Under H, all such readouts have the same weights.
 
 Consider finitely many covered events on one preparation, each represented by a closed outcome attribute of its context. If these attributes are pairwise distinguishable, their weights sum to at most one. More generally, if every comparison of calibrated binary measurers required in the completion differs by at most $\kappa$, a family of $m$ events obeys
-\begin{equation}
+\begin{equation}\label{eq:ce}
  \sum_{i=1}^m w(e_i\mid\omega)\leq1+m\kappa.
- \label{eq:robustCE}
 \end{equation}
-Consequently H and C imply CE for covered events and LO at every finite-copy level. Product weights are needed only to identify independent-copy statistics with the usual hierarchy.
+Consequently H and C imply CE for covered events and local orthogonality (LO) at every finite-copy level. Product weights are needed only to identify independent-copy statistics with the usual hierarchy.
 \end{theorem}
-
 \begin{proof}
-Repeat $M$ in parallel $L$ times, and call the record frequency $F$. Its mean weight is $w(M,1\mid\omega)$, by the marginal assumption. On a preparation in $A_{X,L}(f,h)$, the window detector is sharp. Equation~\eqref{eq:distance} therefore bounds its failure weight on $\omega^{\otimes L}$ by $\delta_{X,L}$. Since $0\leq F,f\leq1$, splitting the finite weighted sum into the window and its complement gives
-\begin{equation}
- \abs{\mathbb E_w F-f}\leq\mathbb E_w\abs{F-f}
-       \leq h+\delta_{X,L}.
- \label{eq:meanwindow}
+Repeat $M$ in parallel $L$ times, and call the record frequency $F$. Its mean weight is $w(M,1\mid\omega)$, by the marginal assumption. On a preparation in $A_{X,L}(f,h)$, the window detector is sharp. Equation~\eqref{eq:metric} therefore bounds its failure weight on $\omega^{\otimes L}$ by $\delta_{X,L}$. Since $0\leq F,f\leq1$, splitting the finite weighted sum into the window and its complement gives
+\begin{equation}\label{eq:mean}
+ |\EW F-f|\leq\EW|F-f|\leq h+\delta_{X,L}.
 \end{equation}
-The two estimates in Eq.~\eqref{eq:neutrality} follow. Taking $L$ to infinity and then $h$ to zero proves neutrality. Independence among the $L$ records was not used.
+The two estimates in Eq.~\eqref{eq:neutral} follow. Taking $L$ to infinity and then $h$ to zero proves neutrality. Independence among the $L$ records was not used.
 
 For the completion, let $x_1,\ldots,x_m$ be the closed event attributes and put $r=\overline{\bigcup_i x_i}$. The nonempty members of
-\begin{equation}
+\begin{equation}\label{eq:completion}
  Z=\{x_1,\ldots,x_m,r\}
- \label{eq:completion}
 \end{equation}
-are pairwise distinguishable. Their union has closure $\Omega$: its complement is $\overline{\bigcup_i x_i}\cap\operatorname{cl}(\bigcup_i x_i)$, which is empty. Principle IV supplies a common discriminator $D$.
+are pairwise distinguishable. Their union has closure $\Omega$: its bar is $\overline{\bigcup_i x_i}\cap\cl(\bigcup_i x_i)$, which is empty. Principle IV supplies a common discriminator $D$.
 
-Coarse-grain $D$ to ``$i$ or not $i$''. It is a measurer of the same binary calibration variable as a Boolean discriminator for $\{x_i,\overline{x_i}\}$. Applying VIII on the full domain shows that this coarse-graining is itself calibrated on that Boolean variable. It is therefore also a measurer of the binary coarse-graining of the original context that defines event $i$. The original preparation is in that context's domain by C. Neutrality identifies the two weights, or bounds their difference by $\kappa$. Summing the $m$ outcomes of $D$ proves Eq.~\eqref{eq:robustCE}.
+Coarse-grain $D$ to ``$i$ or not $i$''. It is a measurer of the same binary calibration variable as a Boolean discriminator for $\{x_i,\overline{x_i}\}$. Applying VIII on the full domain shows that this coarse-graining is itself calibrated on that Boolean variable. It is therefore also a measurer of the binary coarse-graining of the original context that defines event $i$. The original preparation is in that context's domain by C. Neutrality identifies the two weights, or bounds their difference by $\kappa$. Summing the $m$ outcomes of $D$ proves Eq.~\eqref{eq:ce}.
 
-For LO, two locally exclusive events differ in the outcome of the same local setting. That local readout distinguishes their global calibration attributes under C. The preceding completion applies to each finite set and to every finite composite. The independent-copy product rule gives the usual hierarchy. The closure and calibration details are proved in Appendix~\ref{app:tasks}.
+For LO, two locally exclusive events differ in the outcome of the same local setting. That local readout distinguishes their global calibration attributes under C. The preceding completion applies to each finite set and to every finite composite. The independent-copy product rule gives the usual hierarchy. The closure and calibration details are proved in Appendix~\ref{app:closure}.
 \end{proof}
 
-The physical content is that possible discrimination must preserve the weights already assigned to its calibration labels. The theorem does not construct a minimally disturbing instrument. Its qualitative neutrality conclusion agrees with the game-level P4 of Ref.~\citep{M}; Eq.~\eqref{eq:neutrality} gives a direct frequency estimate and identifies the input topology needed for that conclusion.
+The physical content is that possible discrimination must preserve the weights already assigned to its calibration labels. The theorem does not construct a minimally disturbing instrument. Its qualitative neutrality conclusion agrees with the game-level P4 of Ref.~\cite{ctp}; Eq.~\eqref{eq:neutral} gives a direct frequency estimate and identifies the input topology needed for that conclusion.
 
-There is a second sufficient reading of the qualitative step. Suppose the zero-one games for every comparison variable in Appendix~\ref{app:tasks} fall within the decision-supporting domain, and suppose P4 applies to their implementations. Appending the same reward adder to either calibrated detector implements the same game, so P4 identifies their values. Those values are the two event weights by the record-weight bridge. The completion proof then gives CE without invoking H. Extending the game domain to all these variables is an explicit premise; it is not supplied by citing P4 for one selected observable. The finite estimate in Eq.~\eqref{eq:neutrality} remains an additional conclusion of H.
+There is a second sufficient reading of the qualitative step. Suppose the zero-one games for every comparison variable in Appendix~\ref{app:closure} fall within the decision-supporting domain, and suppose P4 applies to their implementations. Appending the same reward adder to either calibrated detector implements the same game, so P4 identifies their values. Those values are the two event weights by the record-weight bridge. The completion proof then gives CE without invoking H. Extending the game domain to all these variables is an explicit premise; it is not supplied by citing P4 for one selected observable. The finite estimate in Eq.~\eqref{eq:neutral} remains an additional conclusion of H.
 
-There is a useful converse certificate. If a family of $m$ pairwise distinguishable covered events has weight sum $1+\Delta$, with $\Delta>0$, at least one binary comparison in the completion differs by $\Delta/m$. For any proposed common frequency center,
-\begin{equation}
- \delta_{X,L}\geq\frac{\Delta}{2m}-h
- \quad\text{for every }L.
- \label{eq:obstruction}
+There is a useful converse certificate. If a family of $m$ pairwise distinguishable covered events has weight sum $1+\Delta$, with $\Delta>0$, at least one binary comparison in the completion differs by at least $\Delta/m$. For any proposed common frequency center,
+\begin{equation}\label{eq:converse}
+ \delta_{X,L}\geq\frac{\Delta}{2m}-h\qquad\text{for every }L.
 \end{equation}
-This obstruction is independent of local dimension and state-space geometry. It says which finite-frequency task fails, rather than assigning a failure vaguely to nonquantumness.
+This obstruction is independent of local dimension and state-space geometry. It identifies a finite-frequency task that fails.
 
 \section{The Bell bound with a residual record}
-\label{sec:parity}
 Exclusivity becomes useful for CHSH only when the additional parity events are represented by calibrated readouts. Instead of assuming that a joint parity variable covers the input, we complete it and retain the extra outcome. This makes the domain issue quantitative.
 
-Let Alice and Bob have settings $x,y\in\bits$ and outcome bits $a,b\in\bits$, corresponding to signs $(-1)^a,(-1)^b$. Define
-\begin{equation}
- \begin{gathered}
- E_{xy}=\sum_{a,b}(-1)^{a+b}w(a,b\mid x,y),\\
- B=E_{00}+E_{01}+E_{10}-E_{11}.
- \end{gathered}
- \label{eq:CHSH}
+Let Alice and Bob have settings $x,y\in\{0,1\}$ and outcome bits $a,b\in\{0,1\}$, corresponding to signs $(-1)^a,(-1)^b$. Define
+\begin{equation}\label{eq:chsh}
+\begin{aligned}
+ E_{xy}&=\sum_{a,b}(-1)^{a+b}w(a,b\mid x,y),\\
+ B&=E_{00}+E_{01}+E_{10}-E_{11}.
+\end{aligned}
 \end{equation}
 The doubled preparation is $\omega\otimes\omega$, on laboratories $(A,B,A',B')$. Fixed ancillas needed by C are included in the laboratory substrates.
 
-For $t=0,1$, compare Alice's setting $x$ with Alice$'$'s setting $x\oplus t$. The choices $t=0$ and $t=1$ are called aligned and crossed. Let $U_{t,x}^c$ be the union of product calibration attributes with $a\oplus a'=c$, including arbitrary independent spectator preparations. On the full substrate define
-\begin{equation}
- \begin{split}
- p_{t,x}^c&=\operatorname{cl}(U_{t,x}^c),\\
- h_t^{cd}&=p_{t,0}^c\cap p_{t,1}^d,\qquad
- V_t=\bigcup_{c,d\in\bits}h_t^{cd}.
- \end{split}
- \label{eq:sectors}
+For $t=0,1$, compare Alice's setting $x$ with Alice$'$'s setting $x\oplus t$. The choices $t=0$ and $t=1$ are called aligned and crossed. Let $U^c_{t,x}$ be the union of product calibration attributes with $a\oplus a'=c$, including arbitrary independent spectator preparations. On the full substrate define
+\begin{equation}\label{eq:parities}
+\begin{aligned}
+ p^c_{t,x}&=\cl(U^c_{t,x}),\\
+ h^{cd}_t&=p^c_{t,0}\cap p^d_{t,1},\qquad
+ V_t=\bigcup_{c,d\in\{0,1\}}h^{cd}_t.
+\end{aligned}
 \end{equation}
-The local readouts followed by a parity computation distinguish $U_{t,x}^0$ and $U_{t,x}^1$. VIII extends their sharp records to the closed sectors. Different nonempty $h_t^{cd}$ are therefore pairwise distinguishable. IV supplies a discriminator for the variable $H_t$ formed by these attributes. As throughout the paper, empty outcomes are omitted.
+The local readouts followed by a parity computation distinguish $U^0_{t,x}$ and $U^1_{t,x}$. VIII extends their sharp records to the closed sectors. Different nonempty $h^{cd}_t$ are therefore pairwise distinguishable. IV supplies a discriminator for the variable $H_t$ formed by these attributes. As throughout the paper, empty outcomes are omitted.
 
 A discriminator need not have the required domain. Define its residual attribute and completed variable by
-\begin{equation}
+\begin{equation}\label{eq:paritycomplete}
  r_t=\overline{V_t},\qquad
- \widehat H_t=\{h_t^{cd}:h_t^{cd}\ne\varnothing\}\cup\{r_t\},
- \label{eq:residual}
+ \widehat H_t=\{h^{cd}_t:h^{cd}_t\ne\varnothing\}\cup\{r_t\},
 \end{equation}
-again omitting $r_t$ if empty. The completion argument of Theorem~\ref{thm:ce} gives $D_{\widehat H_t}=\Omega$. Choose one calibrated discriminator $\widehat J_t$ of this full-domain variable and put
-\begin{equation}
+again omitting $r_t$ if empty. The completion argument of Theorem~\ref{thm:frequency} gives $D_{\widehat H_t}=\Omega$. Choose one calibrated discriminator $\widehat J_t$ of this full-domain variable and put
+\begin{equation}\label{eq:residual}
  \eps_t=w(\widehat J_t,r_t\mid\omega\otimes\omega).
- \label{eq:epsilon}
 \end{equation}
 Set $\eps_t=0$ if $r_t$ is empty. Under H this number is independent of the calibrated implementation. It is an ordinary record weight, not a probability that the constructor malfunctions and not an assumed mixture fraction outside a subspace.
 
 \paragraph{Parity-domain coverage P.}
 The domain condition used in the zero-residual theorem is
-\begin{equation}
- \omega\otimes\omega\in D_{H_t}=\operatorname{cl}(V_t),
- \qquad t=0,1.
- \label{eq:P}
+\begin{equation}\label{eq:P}
+ \omega\otimes\omega\in D_{H_t}=\cl(V_t),\qquad t=0,1.
 \end{equation}
-It is the task-domain counterpart of Cabello's joint-parity normalization assumption \citep[step III, Eq.~(5), and the extension to Eq.~(10)]{Cabello}. Its formulation does not assign simultaneous values to the original local settings. P implies $\eps_0=\eps_1=0$: the residual detector is sharp no on $\operatorname{cl}(V_t)$. We will not use the converse assertion that a zero weight implies a sharp prediction.
+It is the task-domain counterpart of Cabello's joint-parity normalization assumption \cite[step III, Eq.~(5), and the extension to Eq.~(10)]{cabello}. Its formulation does not assign simultaneous values to the original local settings. P implies $\eps_0=\eps_1=0$: the residual detector is sharp no on $\cl(V_t)$. We will not use the converse assertion that a zero weight implies a sharp prediction.
 
-\begin{theorem}[Residual-weight Bell bound]
-\label{thm:bell}
+\begin{theorem}[Residual-weight Bell bound]\label{thm:bell}
 Assume the task principles, the finite-record bridge, and coverage C. Let $\kappa\geq0$ bound every calibrated binary comparison in the sixteen discrimination completions specified below. With independent-copy factorization,
-\begin{equation}
+\begin{equation}\label{eq:bell}
  B^2\leq8+4(\eps_0+\eps_1)+288\kappa.
- \label{eq:residualBell}
 \end{equation}
 Under H, one may set $\kappa=0$. Under P as well, the consequence is
-\begin{equation}
+\begin{equation}\label{eq:tsirelson}
  |B|\leq2\sqrt2,
- \label{eq:bound}
 \end{equation}
 and this constant is sharp. With P and finite calibration discrepancies,
-\begin{equation}
+\begin{equation}\label{eq:kappabell}
  B^2\leq8+288\kappa.
- \label{eq:robustBell}
 \end{equation}
 More generally,
-\begin{equation}
+\begin{equation}\label{eq:distance}
  \eps_t\leq d(\omega\otimes\omega,D_{H_t}),
- \label{eq:domainDistance}
 \end{equation}
 so either residual weights or operational distances to the parity domains give valid error bounds.
 \end{theorem}
-
 \begin{proof}
 Let $S$ be the sum of the eight weights satisfying the CHSH winning relation $a\oplus b=xy$. Normalization gives
-\begin{equation}
+\begin{equation}\label{eq:winning}
  S=2+\frac B2,\qquad
  \sum_{a\oplus b\ne xy}w(a,b\mid x,y)=4-S.
- \label{eq:S}
 \end{equation}
-For each $t,c,d,k\in\bits$, form eight four-laboratory events indexed by $x,a,b\in\bits$:
-\begin{equation}
- \begin{gathered}
- x'=x\oplus t,\quad y=k,\quad
- y'=k\oplus1\oplus c\oplus d,\\
- a'=a\oplus1\oplus\gamma_x,\quad
- (\gamma_0,\gamma_1)=(c,d),\\
- b'=b\oplus1\oplus\gamma_x\oplus xy\oplus x'y'.
- \end{gathered}
- \label{eq:cliqueformula}
+For each $t,c,d,k\in\{0,1\}$, form eight four-laboratory events indexed by $x,a,b\in\{0,1\}$:
+\begin{equation}\label{eq:generator}
+\begin{aligned}
+ x'&=x\oplus t,\quad y=k,\quad y'=k\oplus1\oplus c\oplus d,\\
+ a'&=a\oplus1\oplus\gamma_x,\quad(\gamma_0,\gamma_1)=(c,d),\\
+ b'&=b\oplus1\oplus\gamma_x\oplus xy\oplus x'y'.
+\end{aligned}
 \end{equation}
-Adjoin the outcome $h_t^{cd}$ of $\widehat J_t$, unless it is empty. These are at most nine pairwise distinguishable closed event attributes. Within one $x$ block, different $(a,b)$ are locally exclusive. Between the blocks, $b\oplus b'$ changes while Bob's settings stay fixed, so at least one Bob record differs. Each fine event has Alice parity opposite to the $x$ component of $h_t^{cd}$.
+Adjoin the outcome $h^{cd}_t$ of $\widehat J_t$, unless it is empty. These are at most nine pairwise distinguishable closed event attributes. Within one $x$ block, different $(a,b)$ are locally exclusive. Between the blocks, $b\oplus b'$ changes while Bob's settings stay fixed, so at least one Bob record differs. Each fine event has Alice parity opposite to the $x$ component of $h^{cd}_t$.
 
-Theorem~\ref{thm:ce} bounds each event sum by $1+9\kappa$. Across the sixteen choices, every ordered winning--winning or losing--losing pair occurs exactly once, and each joint parity outcome occurs twice. Appendix~\ref{app:certificate} proves this using an explicit inverse to Eq.~\eqref{eq:cliqueformula}. Product factorization and normalization of the completed readouts now give
-\begin{equation}
- \begin{split}
- S^2+(4-S)^2
- +2\sum_{t=0}^1(1-\eps_t)
- \leq16+144\kappa.
- \end{split}
- \label{eq:Cabello}
+Theorem~\ref{thm:frequency} bounds each event sum by $1+9\kappa$. Across the sixteen choices, every ordered winning--winning or losing--losing pair occurs exactly once, and each joint parity outcome occurs twice. Appendix~\ref{app:certificates} proves this using an explicit inverse to Eq.~\eqref{eq:generator}. Product factorization and normalization of the completed readouts now give
+\begin{equation}\label{eq:sum16}
+ S^2+(4-S)^2+2\sum_{t=0}^1(1-\eps_t)\leq16+144\kappa.
 \end{equation}
-Substitution of Eq.~\eqref{eq:S} proves Eq.~\eqref{eq:residualBell}. H removes $\kappa$ by Theorem~\ref{thm:ce}. P removes the two residual weights by their sharp-no calibration. The qubit construction in Appendix~\ref{app:quantum} attains equality.
+Substitution of Eq.~\eqref{eq:winning} proves Eq.~\eqref{eq:bell}. H removes $\kappa$ by Theorem~\ref{thm:frequency}. P removes the two residual weights by their sharp-no calibration. The qubit construction in Appendix~\ref{app:quantum} attains equality.
 
-Finally, the residual detector is zero on every preparation in $D_{H_t}$. Comparison with any such preparation in Eq.~\eqref{eq:distance}, followed by an infimum, proves Eq.~\eqref{eq:domainDistance}. The empty-domain convention covers that case too.
+Finally, the residual detector is zero on every preparation in $D_{H_t}$. Comparison with any such preparation in Eq.~\eqref{eq:metric}, followed by an infimum, proves Eq.~\eqref{eq:distance}. The empty-domain convention covers that case too.
 \end{proof}
 
-The only change to Cabello's numerical argument is retaining the two residual weights. Their presence identifies what is needed from the task domains. Figure~\ref{fig:residual} displays the resulting exact boundary. A common frequency-window radius $h$ and distance bound $\delta$ in the binary comparisons replace the last term in Eq.~\eqref{eq:residualBell} by $576(h+\delta)$.
+The only change to Cabello's numerical argument is retaining the two residual weights. Their presence identifies what is needed from the task domains. Figure~\ref{fig:bound} plots the resulting bound. A common frequency-window radius $h$ and distance bound $\delta$ in the binary comparisons replace the last term in Eq.~\eqref{eq:bell} by $576(h+\delta)$.
 
-\begin{figure}[H]
+\begin{center}
+\begin{minipage}{\columnwidth}
+\captionsetup{hypcap=false}
 \centering
-\input{figures/residual.tex}
-\caption{The residual-weight bound at $\kappa=0$. The horizontal coordinate is $\eps_0+\eps_1$ and the boundary is $|B|=\sqrt{8+4(\eps_0+\eps_1)}$. Zero residual weight gives $2\sqrt2$; no restriction on the residual records gives the algebraic bound four. The curve is an exact formula. It is not asserted to be attainable at every point.}
-\label{fig:residual}
-\end{figure}
+\begin{tikzpicture}
+\begin{axis}[width=.98\columnwidth,height=4.6cm,xmin=0,xmax=2,ymin=2.75,ymax=4.08,
+ xlabel={Residual weight $\eps_0+\eps_1$},ylabel={Bound on $|B|$},
+ xtick={0,.5,1,1.5,2},ytick={2.8284271247,3.4641016151,4},yticklabels={$2\sqrt2$,$2\sqrt3$,$4$},
+ tick label style={font=\small},label style={font=\small},grid=major]
+\addplot[thick,domain=0:2,samples=101]{sqrt(8+4*x)};
+\end{axis}
+\end{tikzpicture}
+\captionof{figure}{The residual-weight bound at $\kappa=0$: $|B|\leq\sqrt{8+4(\eps_0+\eps_1)}$. Zero residual weight gives $2\sqrt2$; no restriction on the residual records gives the algebraic bound four. Attainability is established at zero residual weight, not along the whole curve.}
+\label{fig:bound}
+\end{minipage}
+\end{center}
 
 \section{What T2 contributes: sectors and capacity}
-\label{sec:capacity}
 The previous theorem reduces the Bell question to two calibrated residual records. To connect it to T2, we first construct the aligned sectors and then ask what would make their residual attribute empty. The relevant task notion is the number of distinguishable information labels, not the number of state coordinates.
 
 \subsection{The four aligned sectors}
-Let $S_A$ denote Alice's active substrate and let $X=\{x_0,x_1\}$ and $Y=\{y_0,y_1\}$ be the binary sector selected by T2. The source's labels $x_1,x_2,y_+,y_-$ have only been relabelled. R1 places these attributes in the required generalized-mixture relations. R2 supplies label flips that preserve the other variable's attributes. R3 identifies specified intrinsic measurement attributes. R4 supplies a two-copy generalized mixture $q$ of the equal-$X$ products and of the equal-$Y$ products \citep[Sec.~6, T2, R1--R4; arXiv pp.~30--31]{M}.
+Let $S_A$ denote Alice's active substrate and let $X=\{x_0,x_1\}$ and $Y=\{y_0,y_1\}$ be the binary sector selected by T2. The source's labels $x_1,x_2,y_+,y_-$ have only been relabelled. R1 places these attributes in the required generalized-mixture relations. R2 supplies label flips that preserve the other variable's attributes. R3 identifies specified intrinsic measurement attributes. R4 supplies a two-copy generalized mixture $q$ of the equal-$X$ products and of the equal-$Y$ products \cite[Sec.~6, T2, R1--R4, pp.~30--32]{ctp}.
 
-On $S_A\otimes S_A$, use the same parity definition as Eq.~\eqref{eq:sectors}, without spectators for now. R2 and R4 imply that all four aligned sectors are nonempty. Indeed, write $T_X$ for the R2 operation on the first copy that flips $x_0,x_1$ while preserving both $y$ attributes, and $T_Y$ for its counterpart. Then
-\begin{equation}
- \begin{array}{c@{\quad}c}
- q\subseteq h_0^{00},&T_Xq\subseteq h_0^{10},\\[2pt]
- T_Yq\subseteq h_0^{01},&T_XT_Yq\subseteq h_0^{11}.
- \end{array}
- \label{eq:T2four}
+On $S_A\otimes S_A$, use the same parity definition as Eq.~\eqref{eq:parities}, without spectators for now. R2 and R4 imply that all four aligned sectors are nonempty. Indeed, write $T_X$ for the R2 operation on the first copy that flips $x_0,x_1$ while preserving both $y$ attributes, and $T_Y$ for its counterpart. Then
+\begin{equation}\label{eq:four}
+\begin{aligned}
+ q&\subseteq h^{00}_0,& T_Xq&\subseteq h^{10}_0,\\
+ T_Yq&\subseteq h^{01}_0,& T_XT_Yq&\subseteq h^{11}_0.
+\end{aligned}
 \end{equation}
-Appendix~\ref{app:T2} proves that possible total transformations transport distinguishability closure, which justifies these inclusions without assuming globally reversible label flips. All four attributes are pairwise distinguishable. R1 and R3 remain conditions on a T2 theory, but are not used in this sector-construction lemma.
+Appendix~\ref{app:transport} proves that possible total transformations transport distinguishability closure, which justifies these inclusions without assuming globally reversible label flips. All four attributes are pairwise distinguishable. R1 and R3 remain conditions on a T2 theory, but are not used in this sector-construction lemma.
 
 \subsection{A task certificate for an exhaustive domain}
-For a substrate $S$, let $\capinfo(S)$ be the greatest number of nonempty pairwise distinguishable attributes it admits, when finite. IV turns every such family into a common discrimination task; call the family a frame. Thus an upper bound on $\capinfo(S)$ is an impossibility statement about recording too many mutually distinguishable input labels. It is not a bound on the dimension of an operational state space.
+For a substrate $S$, let $\capn(S)$ be the greatest number of nonempty pairwise distinguishable attributes it admits, when finite. IV turns every such family into a common discrimination task; call the family a frame. Thus an upper bound on $\capn(S)$ is an impossibility statement about recording too many mutually distinguishable input labels. It is not a bound on the dimension of an operational state space.
 
-Deutsch and Marletto call a variable maximal when the bar of its union is empty \citep[Sec.~6, p.~14]{DM}. The elementary connection needed here is that a frame saturating the information capacity is maximal: a nonempty residual attribute would add one more distinguishable label. We apply that observation while keeping the spectators explicit.
+Deutsch and Marletto call a variable maximal when the bar of its union is empty \cite[Sec.~6, p.~14]{cti}. The elementary connection needed here is that a frame saturating the information capacity is maximal: a nonempty residual attribute would add one more distinguishable label. We apply that observation while keeping the spectators explicit.
 
-\begin{theorem}[Capacity obstruction to a missing parity domain]
-\label{thm:capacity}
-Assume the task principles of Sec.~\ref{sec:premises}, the total-transformation convention, and the independent-calibration convention stated with C. Suppose $S_A$ has the T2 sector described above. Let $R$ be any finite spectator substrate with $\capinfo(R)=n<\infty$, and form the parity attributes on $S_A\otimes S_A\otimes R$.
+\begin{theorem}[Capacity obstruction to a missing parity domain]\label{thm:capacity}
+Assume the task principles of Sec.~2, the total-transformation convention, and the independent-calibration convention stated with C. Suppose $S_A$ has the T2 sector described above. Let $R$ be any finite spectator substrate with $\capn(R)=n<\infty$, and form the parity attributes on $S_A\otimes S_A\otimes R$.
 
 If the aligned parity domain is not the whole substrate, then
-\begin{equation}
- \capinfo(S_A\otimes S_A\otimes R)\geq4n+1.
- \label{eq:surplus}
+\begin{equation}\label{eq:obstruction}
+ \capn(S_A\otimes S_A\otimes R)\geq4n+1.
 \end{equation}
 In particular, the additional capacity bound
-\begin{equation}
- \capinfo(S_A\otimes S_A\otimes R)\leq4\capinfo(R)
- \label{eq:capacitybound}
+\begin{equation}\label{eq:capacity}
+ \capn(S_A\otimes S_A\otimes R)\leq4\capn(R)
 \end{equation}
 forces full aligned coverage, including preparations correlated with $R$.
 
 Suppose, in addition, that an available reversible transformation $G$ of $S_A$, with available inverse, interchanges the tested attributes:
-\begin{equation}
- G(x_a)=y_a,\qquad G(y_a)=x_a,\qquad a\in\bits.
- \label{eq:exchange}
+\begin{equation}\label{eq:interchange}
+ G(x_a)=y_a,\qquad G(y_a)=x_a,\quad a\in\{0,1\}.
 \end{equation}
-Then full aligned coverage implies full crossed coverage. Under this interchange task, failure of either domain implies Eq.~\eqref{eq:surplus}.
+Then full aligned coverage implies full crossed coverage. Under this interchange task, failure of either domain implies Eq.~\eqref{eq:obstruction}.
 \end{theorem}
-
 \begin{proof}
-Choose one nonempty attribute $q_{cd}$ in each sector of Eq.~\eqref{eq:T2four}, and an $n$-element frame $\{z_j\}$ on $R$. Their $4n$ independent products $q_{cd}\otimes z_j$ are nonempty and pairwise distinguishable. A parity readout separates different $(c,d)$; a discriminator on $R$ separates different $j$. Each product lies in the corresponding full-substrate sector $h_0^{cd}$. To see the latter inclusion, append a fixed member of $z_j$ and apply the closure-transport lemma to each of the two parity calibration attributes. Taking the union over members of $z_j$ gives the claim.
+Choose one nonempty attribute $q_{cd}$ in each sector of Eq.~\eqref{eq:four}, and an $n$-element frame $\{z_j\}$ on $R$. Their $4n$ independent products $q_{cd}\otimes z_j$ are nonempty and pairwise distinguishable. A parity readout separates different $(c,d)$; a discriminator on $R$ separates different $j$. Each product lies in the corresponding full-substrate sector $h^{cd}_0$. To see the latter inclusion, append a fixed member of $z_j$ and apply the closure-transport lemma to each of the two parity calibration attributes. Taking the union over members of $z_j$ gives the claim.
 
-If the aligned domain is not all of $\Omega$, then $r_0=\overline{V_0}$ is nonempty: otherwise $\operatorname{cl}(V_0)=\overline\varnothing=\Omega$. This attribute is distinguishable from every product in the $4n$-element frame. IV then gives a $4n+1$-element discrimination task, proving Eq.~\eqref{eq:surplus}. This argument includes a possible residual state correlated with $R$; no factorization of that state was used.
+If the aligned domain is not all of $\Omega$, then $r_0=\overline{V_0}$ is nonempty: otherwise $\cl(V_0)=\overline\varnothing=\Omega$. This attribute is distinguishable from every product in the $4n$-element frame. IV then gives a $4n+1$-element discrimination task, proving Eq.~\eqref{eq:obstruction}. This argument includes a possible residual state correlated with $R$; no factorization of that state was used.
 
-Apply $G$ to the second Alice copy and the identity elsewhere. An available reversible map preserves both distinguishability and its closure, by applying closure transport to the map and its inverse. Equation~\eqref{eq:exchange} therefore sends $h_0^{cd}$ onto $h_1^{cd}$ and their closed union onto the crossed domain. It maps $\Omega$ onto itself, proving the remaining statements.
+Apply $G$ to the second Alice copy and the identity elsewhere. An available reversible map preserves both distinguishability and its closure, by applying closure transport to the map and its inverse. Equation~\eqref{eq:interchange} therefore sends $h^{cd}_0$ onto $h^{cd}_1$ and their closed union onto the crossed domain. It maps $\Omega$ onto itself, proving the remaining statements.
 \end{proof}
 
-The theorem supplies a sufficient task extension of T2. If Eq.~\eqref{eq:capacitybound} holds for the spectators in the doubled Bell experiment and the setting-interchange task is available, P follows and Theorem~\ref{thm:bell} applies. One sufficient form of the capacity bound is a binary information capacity $\capinfo(S_A)=2$ together with multiplicativity on the relevant finite composites. 
+The theorem supplies a sufficient task extension of T2. If Eq.~\eqref{eq:capacity} holds for the spectators in the doubled Bell experiment and the setting-interchange task is available, P follows and Theorem~\ref{thm:bell} applies. One sufficient form of the capacity bound is a binary information capacity $\capn(S_A)=2$ together with multiplicativity on the relevant finite composites.
 
-Interoperability gives a product lower bound for distinguishable labels. Its statement gives no matching upper bound. Hardy's composition axiom also has a product rule for this capacity \citep[Axiom~4]{Hardy}; we do not use his separate rule for the number of state parameters. Equation~\eqref{eq:exchange} requires a further reversible task. R2 flips labels within a variable, rather than interchanging $X$ and $Y$.
+Interoperability supplies the product lower bound, not an upper bound. Deutsch and Marletto do state that locality II makes their classical information capacity additive \cite[Sec.~4, p.~10]{cti}. Their capacity is the logarithm of the largest clonable computation variable; $\capn$ here counts distinguishable frames. Under preparation access, the record-and-prepare construction of their Sec.~8.1, pp.~20--21, turns a finite frame into an information variable: read its label, then prepare a permuted label or two copies. On that domain, their additivity statement gives multiplicativity of $\capn$. Applying it here requires preparation access for the frames counted on the relevant composites, as well as the global condition $\capn(S_A)=2$.
 
-This certificate bounds distinguishable information, not the number of local state coordinates. More generally, the same proof works whenever a frame of $M$ attributes inside the aligned sectors saturates $\capinfo(S_A\otimes S_A)=M$ and this saturation persists as the upper bound $M\capinfo(R)$ after adjoining $R$. Appendix~\ref{app:T2} gives the statement. This general form applies to higher-capacity carriers as well.
+T2 selects a binary sector; it does not impose that global capacity. For example, the same qubit sector can occupy two levels of a qutrit. It satisfies T2, while the carrier and its square have capacities three and nine. Equation~\eqref{eq:capacity} then fails for a trivial spectator. Appendix~\ref{app:quantum} gives this embedding explicitly. Hardy's composition axiom also has a product rule for information capacity \cite[Axiom 4]{hardy}; we do not use his separate rule for the number of state parameters. Equation~\eqref{eq:interchange} requires a further reversible task. R2 flips labels within a variable, rather than interchanging $X$ and $Y$.
 
-For the running qubit example, the four Bell states constitute a saturating frame. The parity readout in Fig.~\ref{fig:parity} has no residual record, even with a correlated finite-dimensional quantum spectator. A Hadamard gate interchanges the tested $\mathsf Z$ and $\mathsf X$ attributes and produces the crossed context. Appendix~\ref{app:quantum} verifies the capacity and circuit claims directly.
+More generally, the same proof works whenever a frame of $M$ attributes inside the aligned sectors saturates $\capn(S_A\otimes S_A)=M$ and this saturation persists as the upper bound $M\capn(R)$ after adjoining $R$. Appendix~\ref{app:transport} gives the statement. This general form applies to higher-capacity carriers as well.
 
-\begin{figure}[!t]
+\begin{figure}[!htbp]
 \centering
-\input{figures/parity.tex}
-\caption{The running qubit example. A controlled-NOT followed by a Hadamard gate and computational readout measures the aligned Bell labels: $c$ is the $\mathsf Z\otimes\mathsf Z$ parity and $d$ the $\mathsf X\otimes\mathsf X$ parity. Four orthogonal Bell states fill the four-dimensional space, so no residual label remains. A Hadamard on the second input converts this to the crossed context. This circuit illustrates the task certificate; it is not assumed in the general proof.}
-\label{fig:parity}
+\begin{tikzpicture}[x=1cm,y=1cm,>=Stealth,font=\small]
+\draw (0,0)--(5,0);\draw (0,-.85)--(5,-.85);
+\node[left] at(0,0){$A$};\node[left] at(0,-.85){$A'$};
+\fill (1.15,0) circle(2pt);\draw (1.15,0)--(1.15,-.85);
+\draw (1.15,-.85) circle(.12);\draw (1.03,-.85)--(1.27,-.85);
+\draw[fill=white] (2.02,-.23)rectangle(2.48,.23);\node at(2.25,0){$H$};
+\foreach \y in {0,-.85}{\draw[fill=white](3.4,\y-.23)rectangle(3.95,\y+.23);\node at(3.675,\y){$Z$};}
+\node[right]at(5,0){$d$};\node[right]at(5,-.85){$c$};
+\end{tikzpicture}
+\caption{The running qubit example. A controlled-NOT followed by a Hadamard gate and computational readout measures the aligned Bell labels: $c$ is the $Z\otimes Z$ parity and $d$ the $X\otimes X$ parity. Four orthogonal Bell states fill the four-dimensional space, so no residual label remains. A Hadamard on the second input converts this to the crossed context.}
+\label{fig:decoder}
 \end{figure}
 
-\subsection{What no-hypersignaling would supply}
-\label{sec:signaling}
-The capacity premise concerns the size of a perfectly readable alphabet. No-hypersignaling concerns a different quantity: the classical cost of reproducing every finite prepare-and-read channel, with shared randomness allowed \citep[Definitions~2--3, Eq.~(2)]{NHS}. The connection is useful, but it requires stating which attributes can be prepared.
+For the running qubit example, the four Bell states constitute a saturating frame. The parity readout in Fig.~\ref{fig:decoder} has no residual record, even with a correlated finite-dimensional quantum spectator. A Hadamard gate interchanges the tested $Z$ and $X$ attributes and produces the crossed context. Appendix~\ref{app:quantum} verifies the capacity and circuit claims directly.
 
-In this subsection, assume that each nonempty attribute in a finite discrimination frame contains an available complete preparation. In particular, this applies to a proposed residual attribute. This \emph{preparation-access premise} extends VI, whose published wording guarantees preparation of information-instantiating attributes \citep[Sec.~6, VI, p.~13]{DM}. It is an explicit premise when applied to arbitrary residual attributes, not a consequence of their being nonempty.
+\subsection{What no-hypersignaling would supply}
+The capacity premise concerns the size of a perfectly readable alphabet. No-hypersignaling concerns a different quantity: the classical cost of reproducing every finite prepare-and-read channel, with shared randomness allowed \cite[Definitions 2--3, Eq.~(2)]{hs}. The connection is useful, but it requires stating which attributes can be prepared.
+
+In this subsection, assume that each nonempty attribute in a finite discrimination frame contains an available complete preparation. In particular, this applies to a proposed residual attribute. This preparation-access premise extends VI, whose wording guarantees preparation of information-instantiating attributes \cite[Sec.~6, VI, p.~13]{cti}. It is an explicit premise when applied to arbitrary residual attributes, not a consequence of their being nonempty.
 
 Write $s(S)$ for the signaling dimension, with value infinity if no finite simulator exists. It is the smallest integer $m$ such that every finite channel $p(j\mid i)$ obtained by preparing $S$ and making one fixed readout can be simulated by sending one of $m$ classical symbols, with free shared randomness. There is no independently chosen input at the receiver. Equivalently, each such channel belongs to the convex hull of deterministic maps whose image has at most $m$ elements. The classical simulator is only a benchmark; no hidden stochastic dynamics is assumed for $S$.
 
 Any $m$-symbol channel with the same $N$ input and output labels satisfies
-\begin{equation}
+\begin{equation}\label{eq:diagonal}
  \sum_{i=1}^N p(i\mid i)\leq m.
- \label{eq:diagonal}
 \end{equation}
-Indeed, a deterministic map with at most $m$ output values has at most $m$ fixed points. Convex mixtures preserve the inequality. An $N$-label discriminator with total preparation-and-readout error at most $\xi$ gives the opposite bound $N(1-\xi)$ on this sum. Letting $\xi$ vanish proves
-\begin{equation}
- \capinfo(S)\leq s(S)
- \label{eq:capSignal}
+Indeed, a deterministic map with at most $m$ output values has at most $m$ fixed points. Convex mixtures preserve the inequality. An $N$-label discriminator with worst-case preparation-and-readout error at most $\xi$ gives the opposite bound $N(1-\xi)$ on this sum. Letting $\xi$ vanish proves
+\begin{equation}\label{eq:caps}
+ \capn(S)\leq s(S)
 \end{equation}
 under preparation access. The closed classical polytope includes the ideal task limit.
 
-\begin{corollary}[A no-hypersignaling certificate for parity coverage]
-\label{cor:nhs}
-Assume the hypotheses of Theorem~\ref{thm:capacity} and preparation access for its frames. Let $\capinfo(R)=n$. Suppose the local prepare-and-read simulations obey
-\begin{equation}
+\begin{corollary}[A no-hypersignaling certificate for parity coverage]\label{cor:hs}
+Assume the hypotheses of Theorem~\ref{thm:capacity} and preparation access for its frames. Let $\capn(R)=n$. Suppose the local prepare-and-read simulations obey
+\begin{equation}\label{eq:localbudgets}
  s(S_A)=2,\qquad s(R)=n,
- \label{eq:localSignal}
 \end{equation}
 and no-hypersignaling holds on the relevant composite:
-\begin{equation}
- s(S_A\otimes S_A\otimes R)
- \leq s(S_A)^2s(R).
- \label{eq:NHS}
+\begin{equation}\label{eq:nohs}
+ s(S_A\otimes S_A\otimes R)\leq s(S_A)^2s(R).
 \end{equation}
-Then the aligned parity domain is exhaustive. The reversible setting interchange of Eq.~\eqref{eq:exchange} makes the crossed domain exhaustive too. With H, C, the finite-record bridge, and independent-copy factorization as in Theorem~\ref{thm:bell}, the consequence is $|B|\leq2\sqrt2$.
+Then the aligned parity domain is exhaustive. The reversible setting interchange of Eq.~\eqref{eq:interchange} makes the crossed domain exhaustive too. With H, C, the finite-record bridge, and independent-copy factorization as in Theorem~\ref{thm:bell}, the consequence is $|B|\leq2\sqrt2$.
 
 More explicitly, a missing aligned domain with a preparable residual would permit a channel on $N=4n+1$ labels for which
-\begin{equation}
- \begin{split}
+\begin{equation}\label{eq:witness}
+\begin{aligned}
  \frac1{4n+1}\sum_i p(i\mid i)&\geq1-\xi,\\
- \frac1{4n+1}\sum_i p(i\mid i)&\leq\frac{4n}{4n+1}
-       \quad\text{(classical)}.
- \end{split}
- \label{eq:identityWitness}
+ \frac1{4n+1}\sum_i p(i\mid i)&\leq\frac{4n}{4n+1}\quad\text{(classical)}.
+\end{aligned}
 \end{equation}
 The second line applies to every $4n$-symbol simulator. Thus any realization with $\xi<1/(4n+1)$ violates that simulation bound.
 \end{corollary}
 \begin{proof}
-Equations~\eqref{eq:capSignal}--\eqref{eq:NHS} imply Eq.~\eqref{eq:capacitybound}; Theorem~\ref{thm:capacity} then applies. Alternatively, its construction supplies $4n$ calibration labels and one residual label. Preparation access and IV turn them into a nearly noiseless $4n+1$-label channel. Equation~\eqref{eq:diagonal} proves Eq.~\eqref{eq:identityWitness}, contradicting Eq.~\eqref{eq:NHS} at sufficiently small $\xi$.
+Equations~\eqref{eq:caps}--\eqref{eq:nohs} imply Eq.~\eqref{eq:capacity}; Theorem~\ref{thm:capacity} then applies. Alternatively, its construction supplies $4n$ calibration labels and one residual label. Preparation access and IV turn them into a nearly noiseless $4n+1$-label channel. Equation~\eqref{eq:diagonal} proves Eq.~\eqref{eq:witness}, contradicting Eq.~\eqref{eq:nohs} at sufficiently small $\xi$.
 \end{proof}
 
-This is the distinguishable-message instance of the communication-game witness used to formulate no-hypersignaling \citep[Eq.~(3)]{NHS}. The task result supplies its messages from a failed parity domain. Without Eq.~\eqref{eq:localSignal}, no-hypersignaling gives only $\capinfo(S_A^{\otimes2}R)\leq s(S_A)^2s(R)$, not the required $4n$. It is therefore stronger than the capacity upper bound only after these local simulation budgets and preparation access are fixed.
+This is the distinguishable-message instance of the communication-game witness used to formulate no-hypersignaling \cite[Eq.~(3)]{hs}. The task result supplies its messages from a failed parity domain. Without Eq.~\eqref{eq:localbudgets}, no-hypersignaling gives only $\capn(S_A^{\otimes2}R)\leq s(S_A)^2s(R)$, not the required $4n$. It is therefore stronger than the capacity upper bound only after these local simulation budgets and preparation access are fixed.
 
-The distinction is strict in general operational theories. For the elementary square and product-state composite in the hypersignaling model of Ref.~\citep{NHS}, the largest jointly readable alphabets have sizes two and four. Nevertheless, a seven-preparation channel defeats every four-symbol simulation by the exact payoff gap $1/2-10/21=1/42$. Appendix~\ref{app:signaling} proves the alphabet counts and rechecks that published witness. The square violates principle IV, so this comparison separates two capacity notions; it is not a countermodel to the constructor premises.
+The distinction is strict in general operational theories. For the elementary square and product-state composite in the hypersignaling model of Ref.~\cite{hs}, the largest jointly readable alphabets have sizes two and four. Nevertheless, a seven-preparation channel defeats every four-symbol simulation by the exact payoff gap $1/2-10/21=1/42$. Appendix~\ref{app:hs} proves the alphabet counts and checks that published witness. The square violates principle IV, so this comparison separates two capacity notions; it is not a countermodel to the constructor premises.
 
 \section{Two finite tests of the premises}
-\label{sec:tests}
 The running qubit example isolates preparation homogeneity. A five-event certificate then excludes the joint application of H and C to specified Bell weights, without assuming any state-space geometry.
 
 Return to
-\begin{equation}
- Z_+=\{\rho_A\otimes\proj+ :\rho_A\text{ arbitrary}\}.
- \label{eq:Zplus}
+\begin{equation}\label{eq:Zplus}
+ Z_+=\{\rho_A\otimes\ket+\bra+ :\rho_A\text{ arbitrary}\}.
 \end{equation}
-This is a closed support attribute. Together with $Z_-$ it has a unitarily readable and copyable sign label. For the total computational-bit observable $N_A+N_B$, where $N=\proj1$, its frequency vector is
-\begin{equation}
- \left(\frac r2,\frac12,\frac{1-r}{2}\right),
- \qquad r=\bra0\rho_A\ket0.
- \label{eq:Zfreq}
+This is a closed support attribute. Together with $Z_-$ it has a unitarily readable and copyable sign label. For the total computational-bit observable $N_A+N_B$, where $N=\ket1\bra1$, its frequency vector is
+\begin{equation}\label{eq:zfreq}
+ \left(\frac r2,\frac12,\frac{1-r}2\right),\qquad r=\bra0\rho_A\ket0.
 \end{equation}
-No state in $Z_+$ lies in a sum eigenspace, and no sum eigenspace is orthogonal to all of $Z_+$. These are the relevant generalized-mixture conditions \citep[Sec.~3(g)]{M}. Yet the members of $Z_+$ have different frequency partitions.
+No state in $Z_+$ lies in a sum eigenspace, and no sum eigenspace is orthogonal to all of $Z_+$. These are the relevant generalized-mixture conditions \cite[Sec.~3, ``Generalised mixtures'', pp.~17--18]{ctp}. Yet the members of $Z_+$ have different frequency partitions.
 
 Let $F_{0,L}$ be the frequency operator for outcome zero on $L$ copies. The exact optimized error about a single common label is
-\begin{equation}
- \begin{split}
+\begin{equation}\label{eq:obstructionT1}
+ \begin{aligned}
  &\inf_f\sup_{\rho_1,\ldots,\rho_L\in Z_+}
- \Tr\!\left[\bigotimes_j\rho_j(F_{0,L}-fI)^2\right]\\
- &\hspace{4em}=\left(\frac{L+1}{4L}\right)^2.
- \end{split}
- \label{eq:risk}
+ \Tr\!\left[\left(\bigotimes_j\rho_j\right)(F_{0,L}-fI)^2\right]\\
+ &\hspace{34mm}=\left(\frac{L+1}{4L}\right)^2.
+ \end{aligned}
 \end{equation}
 It approaches $1/16$. For one completely specified member, the mean-square error about its own frequency is instead at most $1/(4L)$. Appendix~\ref{app:frequency} proves both statements. H therefore uses complete preparation instructions, not every copyable information label.
 
 For a second, geometry-independent test, consider the positive nonsignalling weights
-\begin{equation}
- w(a,b\mid x,y)=\frac{1+(-1)^{a+b+xy}t}{4},\qquad
- t=\frac{81}{100}.
- \label{eq:box}
+\begin{equation}\label{eq:noisybox}
+ w(a,b\mid x,y)=\frac{1+(-1)^{a+b+xy}t}{4},\qquad t=\frac{81}{100}.
 \end{equation}
 They give $B=81/25$. The following five two-copy events, in party order $(A,B,A',B')$, are pairwise locally exclusive:
-\begin{equation}
- \begin{gathered}
+\begin{equation}\label{eq:five}
+\begin{gathered}
  (0000\mid0000),\ (0011\mid0100),\ (0111\mid1101),\\
  (1100\mid1010),\ (1110\mid0011).
- \end{gathered}
- \label{eq:LOclique}
+\end{gathered}
 \end{equation}
 Each wins both CHSH games. Their exact total weight is
-\begin{equation}
- 5\left(\frac{181}{400}\right)^2
- =1+\frac{761}{32000}.
- \label{eq:LOsum}
+\begin{equation}\label{eq:fiveexcess}
+ 5\left(\frac{181}{400}\right)^2=1+\frac{761}{32000}.
 \end{equation}
-This is an application of local orthogonality \citep{Fritz}. Under C and the discrimination principles, Theorem~\ref{thm:ce} forces some binary comparison to differ by at least $761/160000$. Its proposed homogeneous frequency limit then obeys
-\begin{equation}
- \delta_{X,L}\geq\frac{761}{320000}-h
- \quad\text{for every }L.
- \label{eq:boxHgap}
+This is an application of local orthogonality \cite{lo}. Under C and the discrimination principles, Theorem~\ref{thm:frequency} forces some binary comparison to differ by at least $761/160000$. Its proposed homogeneous frequency limit then obeys
+\begin{equation}\label{eq:fiveH}
+ \delta_{X,L}\geq\frac{761}{320000}-h\qquad\text{for every }L.
 \end{equation}
 Thus no theory with these covered weights can satisfy H, regardless of its geometry. The residual Bell theorem gives the additional necessary relation
-\begin{equation}
+\begin{equation}\label{eq:noisyresidual}
  \eps_0+\eps_1+72\kappa\geq\frac{1561}{2500}.
- \label{eq:boxResidual}
 \end{equation}
-Equation~\eqref{eq:boxResidual} is a necessary certificate, not an assertion that these weights are compatible with H and C.
+Equation~\eqref{eq:noisyresidual} is a necessary certificate, not an assertion that these weights are compatible with H and C.
 
 \section{Discussion}
-\label{sec:discussion}
-A possible discriminator, an exhaustive measurement domain, and implementation-independent weights are distinct requirements. The information principles construct discriminators. H compares their weights, while the residual record measures the remaining domain issue. Under H, the result is $B^2\leq8+4(\eps_0+\eps_1)$. Theorem~\ref{thm:capacity} converts failure of a full domain into a surplus distinguishable label; Corollary~\ref{cor:nhs} turns a preparable surplus into a communication witness.
+A possible discriminator, an exhaustive measurement domain, and implementation-independent weights are distinct requirements. The information principles construct discriminators. H compares their weights, while the residual record measures the remaining domain issue. Under H, the result is $B^2\leq8+4(\eps_0+\eps_1)$. Theorem~\ref{thm:capacity} converts failure of a full domain into a surplus distinguishable label; Corollary~\ref{cor:hs} turns a preparable surplus into a communication witness.
 
 \paragraph{States versus measurements.}
-Short and Barrett show that maximal nonsignalling state spaces have no entangled effects. For one and two elementary systems their measurements are mixtures of basic sequential measurements, whereas this stronger description already fails for three systems \citep[Sec.~IV, Corollary~1, Theorems~2--4]{SB}. Their result is an antecedent of the mechanism here: admitting more states can prevent a useful joint measurement. Our addition is narrower. Principles IV and V already supply a discriminator for the calibrated parity sectors, so the unresolved point becomes the domain on which that discriminator can function as the required joint measurement.
+Short and Barrett show that maximal nonsignalling state spaces have no entangled effects. For one and two elementary systems their measurements are mixtures of basic sequential measurements, whereas this stronger description already fails for three systems \cite[Sec.~IV, Corollary 1, Theorems 2--4]{short}. Their result is an antecedent of the mechanism here: admitting more states can prevent a useful joint measurement. Our addition is narrower. Principles IV and V already supply a discriminator for the calibrated parity sectors, so the unresolved point becomes the domain on which that discriminator can function as the required joint measurement.
 
-Czekaj, Horodecki, and Tylec start from three locally complete binary measurements and add a four-outcome Bell measurement with quantum-inherited parity identities. Positivity on products gives the local Bloch-ball constraint and hence quantum bipartite correlations \citep[Secs.~II--III, Eqs.~(4), (9)]{CHT}. This is a stronger correlation conclusion under a different measurement and state-description premise. We assume neither those three coordinates nor local tomography, and do not reconstruct a ball. We retain a possible extra record and derive only the CHSH consequence supported by its weight. Their noisy Bell effects also differ from our residual record, which is a calibrated outcome, not an unsharpness parameter.
+Czekaj, Horodecki, and Tylec start from three locally complete binary measurements and add a four-outcome Bell measurement with quantum-inherited parity identities. Positivity on products gives the local Bloch-ball constraint and hence quantum bipartite correlations \cite[Secs.~II--III, Eqs.~(4), (9)]{czekaj}. This is a stronger correlation conclusion under a different measurement and state-description premise. We assume neither those three coordinates nor local tomography, and do not reconstruct a ball. We retain a possible extra record and derive only the CHSH consequence supported by its weight. Their noisy Bell effects also differ from our residual record, which is a calibrated outcome, not an unsharpness parameter.
 
-Parity-reading effects are studied more generally by Selby and collaborators \citep[Secs.~3, 5, 7--8]{Selby}. Their compositional positivity constraints are closely related in purpose, but they do not supply the task-domain coverage used here. We do not claim to settle their general parity-reading conjecture. Similarly, restricted-effect models motivate keeping the available transformations explicit \citep{JL}; the present theorems do not infer the availability of every positive functional.
+Selby and collaborators study parity-reading effects through compositional positivity constraints \cite[Secs.~3, 5, 7--8]{selby}. Their Sec.~7.1 already recovers the CHSH quantum bound numerically in specified locally tomographic two- and three-fiducial-measurement cases. Our contribution is not that parity readout can restrict CHSH. It is an analytic implication from the stated task and calibration premises, with an explicit residual-domain term. Their general parity-reading conjecture remains distinct from this conditional result. Restricted-effect models likewise motivate keeping the available transformations explicit \cite{restricted}; the present theorems do not infer the availability of every positive functional.
 
 \paragraph{Exclusivity and sharpness.}
-Cabello's extra two-copy contexts are the direct antecedent of P \citep[step~III and Eq.~(10)]{Cabello}. Our sixteen-set generator certifies his counting construction for arbitrary biased weights. The new quantitative term is the retained residual weight, not a new route from exclusivity alone to Tsirelson's bound. Chiribella and Yuan instead obtain exclusivity from repeatability, minimal disturbance, and closure of sharp measurements \citep[Principles~1--3 and Methods]{CY}. Our frequency-neutral completion bypasses that instrument-level assumption. The reset example in Appendix~\ref{app:quantum} proves why retaining an input attribute is weaker than minimal disturbance.
+Cabello's extra two-copy contexts are the direct antecedent of P \cite[step III and Eq.~(10)]{cabello}. Our sixteen-set generator certifies his counting construction for arbitrary biased weights. The new quantitative term is the retained residual weight, not a new route from exclusivity alone to Tsirelson's bound. Chiribella and Yuan instead obtain exclusivity from repeatability, minimal disturbance, and closure of sharp measurements \cite[Principles 1--3 and Methods]{sharp}. Our frequency-neutral completion bypasses that instrument-level assumption. The reset example in Appendix~\ref{app:quantum} shows why retaining an input attribute is weaker than minimal disturbance.
 
-The finite-copy LO conclusion uses the principle of Fritz and collaborators \citep{Fritz}. It is not identified with the almost-quantum representation of Navascu\'es and collaborators \citep[Definition~1]{AQ}, whose vector structure already bounds CHSH. Nor is the present proof an uncertainty-and-steering derivation of the kind given by Oppenheim and Wehner \citep{OW}. These distinctions delimit the contribution: it is a task formulation with a finite-resolution estimate and a residual-domain certificate, not a quantum reconstruction.
+The finite-copy LO conclusion uses the principle of Fritz and collaborators \cite{lo}. It is not identified with the almost-quantum representation of Navascu\'es and collaborators \cite[Definition 1]{aq}, whose vector structure already bounds CHSH. Nor is the present proof an uncertainty-and-steering derivation of the kind given by Oppenheim and Wehner \cite{uncertainty}. These distinctions delimit the contribution: it is a task formulation with a finite-resolution estimate and a residual-domain certificate, not a quantum reconstruction.
 
 \paragraph{Capacity and the remaining implication.}
-Hardy's information-capacity composition rule is an earlier form of the upper bound used in Theorem~\ref{thm:capacity} \citep[Axiom~4]{Hardy}. Dall'Arno and collaborators constrain the larger signaling-simulation problem \citep[Definitions~2--3]{NHS}. Their distinction from readable alphabet size is essential: our no-hypersignaling corollary also needs the local simulation budgets and access to the residual preparations. A failure of domain coverage then has an operational communication test, with the exact threshold in Eq.~\eqref{eq:identityWitness}.
+The source's classical-capacity additivity statement and Hardy's capacity composition rule precede the sufficient bound used here \cite[Sec.~4, p.~10]{cti}\cite[Axiom 4]{hardy}. Section~5.2 explains the preparation-access condition that connects the source's information variables to the frames counted in Theorem~\ref{thm:capacity}. Dall'Arno and collaborators constrain the larger signaling-simulation problem \cite[Definitions 2--3]{hs}. Our no-hypersignaling corollary needs both access to the residual preparations and the stated local simulation budgets; under those conditions a missing domain has the communication test in Eq.~\eqref{eq:witness}.
 
-The logical gap is now specific. H, C, the finite-record rules, and independent-copy factorization are added premises. T2 yields the aligned sectors, but we have not derived the spectator-stable capacity upper bound or a reversible interchange of settings from it and interoperability. Nor have we constructed a superquantum theory satisfying all the premises. No-hypersignaling is a sufficient extension only with the qualifications of Corollary~\ref{cor:nhs}; it is not a derivation from T2. For a universal Bell bound, the selected T2 settings must also cover the tested settings or experiments approaching the theory's supremum. Requiring P for every setting pair would be too strong: the exact tilted-qubit example in Appendix~\ref{app:quantum} lacks an exhaustive aligned domain. Failure of one sufficient certificate does not establish independence of P.
+H, C, the finite-record rules, and independent-copy factorization are added premises. T2 yields the aligned sectors, not the global binary capacity in Eq.~\eqref{eq:capacity}; the qutrit embedding already separates those assertions. We have not derived the reversible setting interchange, or preparation-specific coverage P, from T2 and the information principles. Nor have we constructed a superquantum theory satisfying all those source premises. The remaining Bell question concerns coverage of the tested preparation, not the already-false unrestricted inference from a binary sector to global binary capacity.
 
-\paragraph{Acknowledgments.}
-AI assistance supported literature searches, proof exploration, manuscript preparation, and computational checks. The author is responsible for the results.
+For a universal Bell bound, the selected T2 settings must also cover the tested settings or experiments approaching the theory's supremum. Requiring P for every setting pair would be too strong: the tilted-qubit example in Appendix~\ref{app:quantum} lacks an exhaustive aligned domain. Failure of one sufficient certificate does not establish independence of P.
 
 \paragraph{Reproducibility.}
-The source package contains the LaTeX manuscript, vector figures, a build script, and exact certificate code. The code checks rational identities, finite event enumeration, and symbolic quantum examples. These checks supplement the written proofs; they do not formalize the universal task theorems.
+The source package contains this manuscript, its TikZ and pgfplots figures, a build script, and exact certificate code. The code checks the finite enumeration, rational identities, and quantum examples; it is not a formalization of the universal task theorems.
 
 \input{references.tex}
+
 \appendix
 \input{appendices.tex}
 \end{document}

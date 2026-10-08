@@ -1,0 +1,167 @@
+{
+  "date": "2026-10-08",
+  "command": "bash build.sh (fresh validation copy, active Python virtual environment)",
+  "exit_code": 0,
+  "python": "3.12.3",
+  "pdflatex": "pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)",
+  "sympy": "1.14.0",
+  "pymupdf": "1.28.2",
+  "source_files_sha256": {
+    "main.tex": "c2abaeb62ebabe67316a0406bde537471d29c47c59b5286f15d43ec0989e4d8a",
+    "appendices.tex": "f5ae9120b2aa25f4d6d73e041a31d5a0d9ca5d331eb59c80e93feedb480d9a08",
+    "references.tex": "9c4de90ad69523715ef73a28692e3e56f89d273e4a53ef70e9dd57d46c505f71",
+    "quantumarticle.cls": "3559fdcf5c7d0a3194d80bb5a7b1e9051643ef875f74087b8892a2f691f7b41d",
+    "build.sh": "0a71f3f3407acf9b9ace518ae18f2e99c35c77a506a720c2436778159ddad5a2",
+    "requirements.txt": "7e9bc74c32fd89fdb14801820e097b57a4892cbf8b7c345560d432a0c85d7411",
+    "scripts/verify_certificates.py": "3ae23ae59d3224e9af3e062808a1d1ac403162fb8a967cb760876bb7542bdd05",
+    "scripts/format_reference.py": "d4759a562641b0e7d1ef39e28e377d76737d6626122d5901d8e6442e405237f7"
+  },
+  "source_provenance": "Author revision bundle bell_bounds_revision.zip, manuscript.tex; its manuscript.pdf is byte-identical to the originally supplied pre-v2 PDF (MD5 37240ca59172aa7fa79817a053859519).",
+  "expanded_source_matches_final_revision_with_published_citation_correction": true,
+  "source_changes_from_recovered_revision": [
+    "Reference [13] journal title: rules out -> ruling out.",
+    "Split bibliography and appendices into the existing input files without changing expanded source."
+  ],
+  "publication_formatting_step": {
+    "script": "scripts/format_reference.py",
+    "scope": "Only the already-correct reference [13] line on page 12; reproduce the Latin Modern font/spacing used in the published v2 citation edit.",
+    "font": "lmroman10-regular.otf (located using kpsewhich)",
+    "font_sha256": "1aa18cfefa58132c52ce5de70db1fd1154201c19cd2b2cdaffba4906a33e6852",
+    "reads_published_pdf": false,
+    "unique_target_and_unchanged_text_and_other_pixels_verified": true
+  },
+  "published_doi": "10.5281/zenodo.23245295",
+  "published_pdf": "information_tasks_bell_bounds.pdf",
+  "published_pdf_sha256": "0c22ad04cda316680a5e1649ff301a9f15548e98ee6ae26242ef94f8831a18f3",
+  "published_pdf_unchanged": true,
+  "rebuilt_pdf": "paper.pdf",
+  "rebuilt_pdf_sha256": "4b502e7ef132d76f411e5975f4352182ab73be739de6b96314b108276b57ce32",
+  "pages": 18,
+  "page_comparison": [
+    {
+      "page": 1,
+      "normalized_position_sorted_text_identical": true,
+      "pixels_identical_at_144_dpi": true
+    },
+    {
+      "page": 2,
+      "normalized_position_sorted_text_identical": true,
+      "pixels_identical_at_144_dpi": true
+    },
+    {
+      "page": 3,
+      "normalized_position_sorted_text_identical": true,
+      "pixels_identical_at_144_dpi": true
+    },
+    {
+      "page": 4,
+      "normalized_position_sorted_text_identical": true,
+      "pixels_identical_at_144_dpi": true
+    },
+    {
+      "page": 5,
+      "normalized_position_sorted_text_identical": true,
+      "pixels_identical_at_144_dpi": true
+    },
+    {
+      "page": 6,
+      "normalized_position_sorted_text_identical": true,
+      "pixels_identical_at_144_dpi": true
+    },
+    {
+      "page": 7,
+      "normalized_position_sorted_text_identical": true,
+      "pixels_identical_at_144_dpi": true
+    },
+    {
+      "page": 8,
+      "normalized_position_sorted_text_identical": true,
+      "pixels_identical_at_144_dpi": true
+    },
+    {
+      "page": 9,
+      "normalized_position_sorted_text_identical": true,
+      "pixels_identical_at_144_dpi": true
+    },
+    {
+      "page": 10,
+      "normalized_position_sorted_text_identical": true,
+      "pixels_identical_at_144_dpi": true
+    },
+    {
+      "page": 11,
+      "normalized_position_sorted_text_identical": true,
+      "pixels_identical_at_144_dpi": true
+    },
+    {
+      "page": 12,
+      "normalized_position_sorted_text_identical": true,
+      "pixels_identical_at_144_dpi": true
+    },
+    {
+      "page": 13,
+      "normalized_position_sorted_text_identical": true,
+      "pixels_identical_at_144_dpi": true
+    },
+    {
+      "page": 14,
+      "normalized_position_sorted_text_identical": true,
+      "pixels_identical_at_144_dpi": true
+    },
+    {
+      "page": 15,
+      "normalized_position_sorted_text_identical": true,
+      "pixels_identical_at_144_dpi": true
+    },
+    {
+      "page": 16,
+      "normalized_position_sorted_text_identical": true,
+      "pixels_identical_at_144_dpi": true
+    },
+    {
+      "page": 17,
+      "normalized_position_sorted_text_identical": true,
+      "pixels_identical_at_144_dpi": true
+    },
+    {
+      "page": 18,
+      "normalized_position_sorted_text_identical": true,
+      "pixels_identical_at_144_dpi": true
+    }
+  ],
+  "comparison_renderer": "MuPDF 1.28.2, 144 dpi",
+  "finite_exact_checks": 1276,
+  "final_source_certificate_groups": 8,
+  "unresolved_references_or_warnings_or_overfull_boxes": [],
+  "underfull_box_notices": [
+    "Underfull \\hbox (badness 1454) in paragraph at lines 104--106",
+    "Underfull \\hbox (badness 1454) in paragraph at lines 347--348",
+    "Underfull \\hbox (badness 3826) in paragraph at lines 479--480",
+    "Underfull \\hbox (badness 1082) in paragraph at lines 479--480",
+    "Underfull \\hbox (badness 1062) in paragraph at lines 479--480",
+    "Underfull \\hbox (badness 10000) in paragraph at lines 4--5",
+    "Underfull \\hbox (badness 6658) in paragraph at lines 4--5",
+    "Underfull \\hbox (badness 10000) in paragraph at lines 4--5",
+    "Underfull \\hbox (badness 2293) in paragraph at lines 5--6",
+    "Underfull \\hbox (badness 1231) in paragraph at lines 5--6",
+    "Underfull \\hbox (badness 6859) in paragraph at lines 5--6",
+    "Underfull \\hbox (badness 1783) in paragraph at lines 6--7",
+    "Underfull \\hbox (badness 1810) in paragraph at lines 8--9",
+    "Underfull \\hbox (badness 2941) in paragraph at lines 8--9",
+    "Underfull \\hbox (badness 3168) in paragraph at lines 9--10",
+    "Underfull \\hbox (badness 4328) in paragraph at lines 9--10",
+    "Underfull \\hbox (badness 2293) in paragraph at lines 9--10",
+    "Underfull \\hbox (badness 2269) in paragraph at lines 11--12",
+    "Underfull \\hbox (badness 2253) in paragraph at lines 11--12",
+    "Underfull \\hbox (badness 5490) in paragraph at lines 13--14",
+    "Underfull \\hbox (badness 7308) in paragraph at lines 13--14",
+    "Underfull \\hbox (badness 2495) in paragraph at lines 13--14",
+    "Underfull \\hbox (badness 4366) in paragraph at lines 13--14",
+    "Underfull \\hbox (badness 3312) in paragraph at lines 14--15",
+    "Underfull \\hbox (badness 2205) in paragraph at lines 15--16",
+    "Underfull \\hbox (badness 1400) in paragraph at lines 172--173",
+    "Underfull \\hbox (badness 1137) in paragraph at lines 221--222",
+    "Underfull \\hbox (badness 1215) in paragraph at lines 221--222"
+  ],
+  "scope": "Final-source compilation, finite certificate checks, and exact page text/rendering comparison; not a formal verification of the universal task theorems."
+}
