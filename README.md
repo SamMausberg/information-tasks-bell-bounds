@@ -1,7 +1,7 @@
 # From information tasks to exclusivity and Bell bounds
 
-Read the [final manuscript](information_tasks_bell_bounds.pdf). This is an unpublished research
-manuscript, released with its calculations and supporting material.
+Read the [final manuscript](information_tasks_bell_bounds.pdf). This research manuscript is
+published on [Zenodo](https://doi.org/10.5281/zenodo.23245295), released with its calculations and supporting material.
 
 ## Release and verification
 

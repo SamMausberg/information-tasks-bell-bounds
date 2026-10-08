@@ -11,7 +11,9 @@ url: "https://github.com/SamMausberg/information-tasks-bell-bounds"
 license: MIT
 license-url: "https://github.com/SamMausberg/information-tasks-bell-bounds/blob/main/LICENSE"
 preferred-citation:
-  type: unpublished
+  type: article
+  status: preprint
+  doi: "10.5281/zenodo.23245295"
   title: "From information tasks to exclusivity and Bell bounds"
   authors:
     - family-names: Mausberg
